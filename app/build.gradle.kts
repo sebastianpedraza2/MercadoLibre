@@ -18,48 +18,43 @@ android {
     }
 
     buildTypes {
-        getByName("debug") {
+        val debug by getting {
             applicationIdSuffix = ".debug"
         }
-        getByName("release") {
+        val release by getting {
             applicationIdSuffix = ".release"
-            isMinifyEnabled = true
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
         }
     }
 
     packagingOptions {
         resources {
-            excludes.add("META-INF/AL2.0")
-            excludes.add("META-INF/LGPL2.1")
-            excludes.add("**/attach_hotspot_windows.dll")
-            excludes.add("META-INF/licenses/ASM")
+            excludes.add("/META-INF/{AL2.0,LGPL2.1}")
         }
     }
 }
 
 dependencies {
 
+    //Modules
+    implementation(project(":core"))
+    implementation(project(":feature-search:search-presentation"))
+    implementation(project(":feature-search:search-domain"))
+    implementation(project(":feature-search:search-data"))
+
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.compose.runtime)
     implementation(libs.androidx.lifecycle.runtimeCompose)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.compose.material)
+    implementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.compose.ui.testManifest)
 
     implementation(libs.coil.kt)
     implementation(libs.coil.kt.svg)
 
-
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.1")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.3.1")
-    debugImplementation("androidx.compose.ui:ui-test-manifest:1.3.1")
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.android.material)
+    androidTestImplementation(libs.androidx.test.espresso.core)
 }

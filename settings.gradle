@@ -15,3 +15,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MercadoLibre"
 include ':app'
+include ':core'
+include ':feature-search'
+include ':feature-search:search-presentation'
+include ':feature-search:search-domain'
+include ':feature-search:search-data'

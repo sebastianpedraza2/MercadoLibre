@@ -35,5 +35,9 @@ gradlePlugin {
             id = "mercadolibre.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
+        register("androidFeature") {
+            id = "mercadolibre.android.feature"
+            implementationClass = "AndroidFeatureConventionPlugin"
+        }
     }
 }
