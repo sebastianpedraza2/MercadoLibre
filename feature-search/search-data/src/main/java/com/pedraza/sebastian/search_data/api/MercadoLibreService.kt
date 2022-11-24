@@ -27,8 +27,8 @@ interface MercadoLibreService {
         @Path("site_id") siteId: String,
         @Query("limit") pagingLimit: Int,
         @Query("offset") pagingOffset: Int,
-        @Query("category") category: String,
-        @Query("q") query: String
+        @Query("category") category: String?,
+        @Query("q") query: String?
     ): Response<SearchDto>
 
     /**
