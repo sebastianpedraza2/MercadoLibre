@@ -49,6 +49,10 @@ dependencies {
     implementation(libs.androidx.compose.material)
     implementation(libs.androidx.compose.ui.tooling)
     implementation(libs.androidx.compose.ui.testManifest)
+    implementation(libs.retrofit.core)
+    implementation(libs.okhttp.logging)
+    implementation(libs.gson)
+    implementation(libs.gson.converter)
 
     implementation(libs.coil.kt)
     implementation(libs.coil.kt.svg)
