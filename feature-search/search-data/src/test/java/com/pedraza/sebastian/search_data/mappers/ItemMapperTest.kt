@@ -2,6 +2,7 @@ package com.pedraza.sebastian.search_data.mappers
 
 import com.google.common.truth.Truth.assertThat
 import com.pedraza.sebastian.search_data.entities.dto.item.AttributeDto
+import com.pedraza.sebastian.search_data.entities.dto.item.ItemDescriptionDto
 import com.pedraza.sebastian.search_data.entities.dto.item.ItemPictureDto
 import com.pedraza.sebastian.search_data.utils.generateMockItemDto
 import org.junit.Test
@@ -36,8 +37,12 @@ class ItemMapperTest {
             ),
             code = 200
         )
+
+        val itemDescription =
+            ItemDescriptionDto(plainText = "SOMOS MOBILEWAVE \n\nCABLE ORIGINAL APPLE \nMODELOS \nIPHONE 5,6,7,8,X,XS,XR,11\nCOLOR BLANCO \nEMPAQUE BULK \n\n\nENVIO")
+
         //when
-        val domainItem = itemDto.toDomain()
+        val domainItem = itemDto.toDomain(itemDescription)
 
         //then
         assertThat(domainItem.pictures).isEqualTo(listOf("https://http2.mlstatic.com/D_955993-MCO43399175828_092020-O.jpg"))
@@ -60,8 +65,12 @@ class ItemMapperTest {
             attributes = null,
             code = 200
         )
+
+        val itemDescription =
+            ItemDescriptionDto(plainText = "SOMOS MOBILEWAVE \n\nCABLE ORIGINAL APPLE \nMODELOS \nIPHONE 5,6,7,8,X,XS,XR,11\nCOLOR BLANCO \nEMPAQUE BULK \n\n\nENVIO")
+
         //when
-        val domainItem = itemDto.toDomain()
+        val domainItem = itemDto.toDomain(itemDescription)
 
         //then
         assertThat(domainItem.pictures).isEqualTo(listOf("https://http2.mlstatic.com/D_955993-MCO43399175828_092020-O.jpg"))
@@ -76,8 +85,34 @@ class ItemMapperTest {
             attributes = null,
             code = 200
         )
+
+        val itemDescription =
+            ItemDescriptionDto(plainText = "SOMOS MOBILEWAVE \n\nCABLE ORIGINAL APPLE \nMODELOS \nIPHONE 5,6,7,8,X,XS,XR,11\nCOLOR BLANCO \nEMPAQUE BULK \n\n\nENVIO")
+
         //when
-        val domainItem = itemDto.toDomain()
+        val domainItem = itemDto.toDomain(itemDescription)
+
+        //then
+        assertThat(domainItem.title).isNotNull()
+        assertThat(domainItem.pictures).isNotNull()
+        assertThat(domainItem.itemCondition).isNotNull()
+    }
+
+
+    @Test
+    fun `test ItemMapper when description is null`() {
+        //given
+        val itemDto = generateMockItemDto(
+            pictures = null,
+            attributes = null,
+            code = 200
+        )
+
+        val itemDescription =
+            ItemDescriptionDto(plainText = null)
+
+        //when
+        val domainItem = itemDto.toDomain(itemDescription)
 
         //then
         assertThat(domainItem.title).isNotNull()

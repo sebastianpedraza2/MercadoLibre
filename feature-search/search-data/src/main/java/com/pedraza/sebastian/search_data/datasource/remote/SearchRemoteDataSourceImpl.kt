@@ -30,6 +30,6 @@ class SearchRemoteDataSourceImpl(
             itemId = itemId
         )
 
-    override suspend fun getItemDescription(itemId: Int): Response<ItemDescriptionDto> =
+    override suspend fun getItemDescription(itemId: String): Response<ItemDescriptionDto> =
         mercadoLibreService.getItemDescription(itemId)
 }

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MercadoLibre</string>
+    <string name="meli_default_error">Something went wrong, check your network!</string>
+</resources>

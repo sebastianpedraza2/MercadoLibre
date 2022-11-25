@@ -2,16 +2,17 @@ package com.pedraza.sebastian.search_data.mappers
 
 import com.pedraza.sebastian.core.utils.Constants.ITEM_CONDITION
 import com.pedraza.sebastian.search_data.entities.dto.item.AttributeDto
+import com.pedraza.sebastian.search_data.entities.dto.item.ItemDescriptionDto
 import com.pedraza.sebastian.search_data.entities.dto.item.ItemDto
 import com.pedraza.sebastian.search_data.entities.dto.item.ItemPictureDto
 import com.pedraza.sebastian.search_domain.models.item.Item
 
-fun ItemDto.toDomain(): Item {
+fun ItemDto.toDomain(itemDescriptionDto: ItemDescriptionDto): Item {
     return with(body) {
         Item(
             id = id,
             title = title.orEmpty(),
-            description = "",
+            description = getItemDescription(itemDescriptionDto),
             itemCondition = getItemCondition(attributes).orEmpty(),
             availableQuantity = availableQuantity,
             initialQuantity = initialQuantity,
@@ -24,6 +25,7 @@ fun ItemDto.toDomain(): Item {
         )
     }
 }
+
 
 fun getItemCondition(attributes: List<AttributeDto>?): String? {
     return attributes?.let {
@@ -38,3 +40,8 @@ fun getItemPictures(pictures: List<ItemPictureDto>?): List<String>? {
         it.mapNotNull { picture -> picture.secureUrl }
     }
 }
+
+fun getItemDescription(itemDescriptionDto: ItemDescriptionDto): String {
+    return itemDescriptionDto.plainText ?: ""
+}
+

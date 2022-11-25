@@ -10,6 +10,7 @@ android {
 
 dependencies{
     implementation(libs.androidx.core.ktx)
+    implementation(libs.retrofit.core)
     api(libs.androidx.compose.foundation)
     api(libs.androidx.compose.foundation.layout)
     api(libs.androidx.compose.runtime)

@@ -5,5 +5,5 @@ import com.google.gson.annotations.SerializedName
 
 data class ItemDescriptionDto(
     @SerializedName("plain_text")
-    val plainText: String,
+    val plainText: String?,
 )
