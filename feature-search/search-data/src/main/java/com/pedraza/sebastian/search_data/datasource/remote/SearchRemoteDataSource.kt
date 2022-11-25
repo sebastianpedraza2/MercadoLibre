@@ -1,6 +1,7 @@
 package com.pedraza.sebastian.search_data.datasource.remote
 
 import com.pedraza.sebastian.search_data.entities.dto.category.CategoryDto
+import com.pedraza.sebastian.search_data.entities.dto.item.ItemDescriptionDto
 import com.pedraza.sebastian.search_data.entities.dto.item.ItemDto
 import com.pedraza.sebastian.search_data.entities.dto.search.SearchDto
 import retrofit2.Response
@@ -14,5 +15,6 @@ interface SearchRemoteDataSource {
         category: String?,
         query: String?
     ): Response<SearchDto>
-    suspend fun getItemDetail(itemId: Int): Response<ArrayList<ItemDto>>
+    suspend fun getItemDetail(itemId: String): Response<ItemDto>
+    suspend fun getItemDescription(itemId: Int): Response<ItemDescriptionDto>
 }

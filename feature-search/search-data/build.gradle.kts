@@ -7,6 +7,10 @@ android {
 }
 
 dependencies {
+
+    //Modules
+    implementation(project(":feature-search:search-domain"))
+
     implementation(libs.retrofit.core)
     implementation(libs.okhttp.logging)
     implementation(libs.gson)

@@ -7,13 +7,11 @@ data class ItemPictureDto(
     @SerializedName("id")
     val id: String,
     @SerializedName("max_size")
-    val maxSize: String,
-    @SerializedName("quality")
-    val quality: String,
+    val maxSize: String?,
     @SerializedName("secure_url")
-    val secureUrl: String,
+    val secureUrl: String?,
     @SerializedName("size")
-    val size: String,
+    val size: String?,
     @SerializedName("url")
-    val url: String
+    val url: String?
 )

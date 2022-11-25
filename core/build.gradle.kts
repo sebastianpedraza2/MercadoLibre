@@ -7,3 +7,11 @@ plugins {
 android {
     namespace = "com.pedraza.sebastian.core"
 }
+
+dependencies{
+    implementation(libs.androidx.core.ktx)
+    api(libs.androidx.compose.foundation)
+    api(libs.androidx.compose.foundation.layout)
+    api(libs.androidx.compose.runtime)
+    debugApi(libs.androidx.compose.ui.tooling)
+}

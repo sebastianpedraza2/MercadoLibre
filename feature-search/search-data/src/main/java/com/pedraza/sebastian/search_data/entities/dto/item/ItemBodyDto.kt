@@ -4,30 +4,28 @@ package com.pedraza.sebastian.search_data.entities.dto.item
 import com.google.gson.annotations.SerializedName
 
 data class ItemBodyDto(
-    @SerializedName("attributes")
-    val attributes: List<AttributeDto>,
-    @SerializedName("available_quantity")
-    val availableQuantity: Int,
-    @SerializedName("category_id")
-    val categoryId: String,
-    @SerializedName("descriptions")
-    val descriptions: List<Any>,
     @SerializedName("id")
     val id: String,
+    @SerializedName("attributes")
+    val attributes: List<AttributeDto>?,
+    @SerializedName("available_quantity")
+    val availableQuantity: Int?,
+    @SerializedName("category_id")
+    val categoryId: String?,
     @SerializedName("initial_quantity")
-    val initialQuantity: Int,
+    val initialQuantity: Int?,
     @SerializedName("permalink")
-    val permalink: String,
+    val permalink: String?,
     @SerializedName("pictures")
-    val pictures: List<ItemPictureDto>,
+    val pictures: List<ItemPictureDto>?,
     @SerializedName("price")
     val price: Int,
     @SerializedName("sold_quantity")
-    val soldQuantity: Int,
+    val soldQuantity: Int?,
     @SerializedName("thumbnail")
-    val thumbnail: String,
+    val thumbnail: String?,
     @SerializedName("title")
-    val title: String,
+    val title: String?,
     @SerializedName("warranty")
-    val warranty: String
+    val warranty: String?
 )
