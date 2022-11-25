@@ -7,7 +7,7 @@ data class SearchDto(
     @SerializedName("paging")
     val paging: PagingDto,
     @SerializedName("results")
-    val results: List<QueryResultDto>,
+    val results: List<QueryResultDto>?,
     @SerializedName("site_id")
-    val siteId: String,
+    val siteId: String?,
 )

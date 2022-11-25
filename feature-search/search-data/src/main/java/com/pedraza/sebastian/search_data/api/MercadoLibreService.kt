@@ -1,6 +1,7 @@
 package com.pedraza.sebastian.search_data.api
 
 import com.pedraza.sebastian.search_data.entities.dto.category.CategoryDto
+import com.pedraza.sebastian.search_data.entities.dto.item.ItemDescriptionDto
 import com.pedraza.sebastian.search_data.entities.dto.item.ItemDto
 import com.pedraza.sebastian.search_data.entities.dto.search.SearchDto
 import retrofit2.Response
@@ -32,10 +33,19 @@ interface MercadoLibreService {
     ): Response<SearchDto>
 
     /**
-     * Returns the detail of an item
+     * Returns the detail of the item identified with [itemId]
      */
-    @GET("items")
+    @GET("items/{item_id}")
     suspend fun getItemDetail(
-        @Query("ids") itemId: Int
-    ): Response<ArrayList<ItemDto>>
+        @Query("include_attributes") includeAttributes: String,
+        @Path("item_id") itemId: String
+    ): Response<ItemDto>
+
+    /**
+     * Returns the description of the item identified with [itemId]
+     */
+    @GET("items/{item_id}/description")
+    suspend fun getItemDescription(
+        @Path("item_id") itemId: Int
+    ): Response<ItemDescriptionDto>
 }

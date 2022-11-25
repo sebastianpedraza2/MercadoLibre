@@ -5,15 +5,15 @@ import com.google.gson.annotations.SerializedName
 
 data class QueryResultDto(
     @SerializedName("available_quantity")
-    val availableQuantity: Int,
+    val availableQuantity: Int?,
     @SerializedName("id")
-    val id: String,
+    val itemId: String,
     @SerializedName("price")
     val price: Int,
     @SerializedName("sold_quantity")
-    val soldQuantity: Int,
+    val soldQuantity: Int?,
     @SerializedName("thumbnail")
-    val thumbnail: String,
+    val thumbnail: String?,
     @SerializedName("title")
     val title: String,
 )
