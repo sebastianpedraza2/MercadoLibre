@@ -11,18 +11,11 @@ import retrofit2.http.Query
 
 interface MercadoLibreService {
 
-    /**
-     * Returns all available categories
-     * available by [siteId]
-     */
     @GET("sites/{site_id}/categories")
     suspend fun getCategories(
         @Path("site_id") siteId: String,
     ): Response<ArrayList<CategoryDto>>
 
-    /**
-     * Returns all items that meet the search query
-     */
     @GET("sites/{site_id}/search")
     suspend fun searchItems(
         @Path("site_id") siteId: String,
@@ -32,20 +25,14 @@ interface MercadoLibreService {
         @Query("q") query: String?
     ): Response<SearchDto>
 
-    /**
-     * Returns the detail of the item identified with [itemId]
-     */
     @GET("items/{item_id}")
     suspend fun getItemDetail(
-        @Query("include_attributes") includeAttributes: String,
-        @Path("item_id") itemId: String
+        @Path("item_id") itemId: String,
+        @Query("include_attributes") includeAttributes: String
     ): Response<ItemDto>
 
-    /**
-     * Returns the description of the item identified with [itemId]
-     */
     @GET("items/{item_id}/description")
     suspend fun getItemDescription(
-        @Path("item_id") itemId: Int
+        @Path("item_id") itemId: String
     ): Response<ItemDescriptionDto>
 }

@@ -1,0 +1,866 @@
+{
+  "id": "MCO1033116459",
+  "site_id": "MCO",
+  "title": "Microsoft Xbox Series S 512gb Standard Color  Blanco",
+  "subtitle": null,
+  "seller_id": 406781619,
+  "category_id": "MCO2931",
+  "official_store_id": null,
+  "price": 1599000,
+  "base_price": 1599000,
+  "original_price": null,
+  "currency_id": "COP",
+  "initial_quantity": 7,
+  "available_quantity": 1,
+  "sold_quantity": 3,
+  "sale_terms": [
+    {
+      "id": "WARRANTY_TYPE",
+      "name": "Tipo de garantía",
+      "value_id": "2230279",
+      "value_name": "Garantía de fábrica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "2230279",
+          "name": "Garantía de fábrica",
+          "struct": null
+        }
+      ],
+      "value_type": "list"
+    },
+    {
+      "id": "WARRANTY_TIME",
+      "name": "Tiempo de garantía",
+      "value_id": null,
+      "value_name": "3 meses",
+      "value_struct": {
+        "number": 3,
+        "unit": "meses"
+      },
+      "values": [
+        {
+          "id": null,
+          "name": "3 meses",
+          "struct": {
+            "number": 3,
+            "unit": "meses"
+          }
+        }
+      ],
+      "value_type": "number_unit"
+    }
+  ],
+  "buying_mode": "buy_it_now",
+  "listing_type_id": "gold_special",
+  "start_time": "2022-11-01T16:03:03.000Z",
+  "stop_time": "2042-10-27T04:00:00.000Z",
+  "condition": "new",
+  "permalink": "https://articulo.mercadolibre.com.co/MCO-1033116459-microsoft-xbox-series-s-512gb-standard-color-blanco-_JM",
+  "thumbnail_id": "995465-MLA45731835097_042021",
+  "thumbnail": "http://http2.mlstatic.com/D_995465-MLA45731835097_042021-I.jpg",
+  "secure_thumbnail": "https://http2.mlstatic.com/D_995465-MLA45731835097_042021-I.jpg",
+  "pictures": [
+    {
+      "id": "995465-MLA45731835097_042021",
+      "url": "http://http2.mlstatic.com/D_995465-MLA45731835097_042021-O.jpg",
+      "secure_url": "https://http2.mlstatic.com/D_995465-MLA45731835097_042021-O.jpg",
+      "size": "349x500",
+      "max_size": "839x1200",
+      "quality": ""
+    },
+    {
+      "id": "916765-MLA45731831374_042021",
+      "url": "http://http2.mlstatic.com/D_916765-MLA45731831374_042021-O.jpg",
+      "secure_url": "https://http2.mlstatic.com/D_916765-MLA45731831374_042021-O.jpg",
+      "size": "382x500",
+      "max_size": "918x1200",
+      "quality": ""
+    },
+    {
+      "id": "903613-MLA45731831377_042021",
+      "url": "http://http2.mlstatic.com/D_903613-MLA45731831377_042021-O.jpg",
+      "secure_url": "https://http2.mlstatic.com/D_903613-MLA45731831377_042021-O.jpg",
+      "size": "500x248",
+      "max_size": "1196x595",
+      "quality": ""
+    },
+    {
+      "id": "798625-MLA45731835103_042021",
+      "url": "http://http2.mlstatic.com/D_798625-MLA45731835103_042021-O.jpg",
+      "secure_url": "https://http2.mlstatic.com/D_798625-MLA45731835103_042021-O.jpg",
+      "size": "500x340",
+      "max_size": "1200x816",
+      "quality": ""
+    }
+  ],
+  "video_id": null,
+  "descriptions": [],
+  "accepts_mercadopago": true,
+  "non_mercado_pago_payment_methods": [],
+  "shipping": {
+    "mode": "me2",
+    "methods": [],
+    "tags": [
+      "self_service_in",
+      "mandatory_free_shipping"
+    ],
+    "dimensions": null,
+    "local_pick_up": true,
+    "free_shipping": true,
+    "logistic_type": "xd_drop_off",
+    "store_pick_up": false
+  },
+  "international_delivery_mode": "none",
+  "seller_address": {
+    "city": {
+      "id": "TUNPQ0NIQTk2OTI1",
+      "name": "Chapinero"
+    },
+    "state": {
+      "id": "CO-DC",
+      "name": "Bogotá D.C."
+    },
+    "country": {
+      "id": "CO",
+      "name": "Colombia"
+    },
+    "search_location": {
+      "neighborhood": {
+        "id": "TUNPQkxBRzg0NjU1",
+        "name": "Lago Gaitán"
+      },
+      "city": {
+        "id": "TUNPQ0NIQTk2OTI1",
+        "name": "Chapinero"
+      },
+      "state": {
+        "id": "TUNPUEJPR1gxMDljZA",
+        "name": "Bogotá D.C."
+      }
+    },
+    "id": 1026618372
+  },
+  "seller_contact": null,
+  "location": {},
+  "coverage_areas": [],
+  "attributes": [
+    {
+      "id": "ACCESSORIES_INCLUDED",
+      "name": "Accesorios incluidos",
+      "value_id": null,
+      "value_name": "1 cable HDMI,1 cable de alimentación CA",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "8906382",
+          "name": "1 cable HDMI",
+          "struct": null
+        },
+        {
+          "id": "8294230",
+          "name": "1 cable de alimentación CA",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "BRAND",
+      "name": "Marca",
+      "value_id": "15770",
+      "value_name": "Microsoft",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "15770",
+          "name": "Microsoft",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "CAPACITY",
+      "name": "Capacidad",
+      "value_id": "47780",
+      "value_name": "512 GB",
+      "value_struct": {
+        "number": 512,
+        "unit": "GB"
+      },
+      "values": [
+        {
+          "id": "47780",
+          "name": "512 GB",
+          "struct": {
+            "number": 512,
+            "unit": "GB"
+          }
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number_unit"
+    },
+    {
+      "id": "COLOR",
+      "name": "Color",
+      "value_id": "52055",
+      "value_name": "Blanco",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "52055",
+          "name": "Blanco",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "CONSOLE_TYPE",
+      "name": "Tipo de consola",
+      "value_id": "6827496",
+      "value_name": "De sobremesa",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "6827496",
+          "name": "De sobremesa",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "CONTROLLERS_CONNECTIVITIES",
+      "name": "Conectividades de los controles",
+      "value_id": "6827501",
+      "value_name": "Inalámbrico",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "6827501",
+          "name": "Inalámbrico",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "list"
+    },
+    {
+      "id": "CONTROLLERS_NUMBER_INCLUDED",
+      "name": "Cantidad de controles incluidos",
+      "value_id": "7673783",
+      "value_name": "1",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "7673783",
+          "name": "1",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number"
+    },
+    {
+      "id": "CPU_CORES_NUMBER",
+      "name": "Cantidad de núcleos de CPU",
+      "value_id": "2549447",
+      "value_name": "8",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "2549447",
+          "name": "8",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number"
+    },
+    {
+      "id": "DEPTH",
+      "name": "Profundidad",
+      "value_id": "4369077",
+      "value_name": "151 mm",
+      "value_struct": {
+        "number": 151,
+        "unit": "mm"
+      },
+      "values": [
+        {
+          "id": "4369077",
+          "name": "151 mm",
+          "struct": {
+            "number": 151,
+            "unit": "mm"
+          }
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number_unit"
+    },
+    {
+      "id": "EDITION",
+      "name": "Edición",
+      "value_id": "7779125",
+      "value_name": "Standard",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "7779125",
+          "name": "Standard",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "EXCLUSIVE_CHANNEL",
+      "name": "Canal exclusivo",
+      "value_id": "7865259",
+      "value_name": "Mercado Libre",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "7865259",
+          "name": "Mercado Libre",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "list"
+    },
+    {
+      "id": "GAME_FORMATS",
+      "name": "Formatos de juegos",
+      "value_id": "7667258",
+      "value_name": "Digital",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "7667258",
+          "name": "Digital",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "GPU",
+      "name": "GPU",
+      "value_id": "11091239",
+      "value_name": "AMD Radeon RDNA 2",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "11091239",
+          "name": "AMD Radeon RDNA 2",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "GTIN",
+      "name": "Código universal de producto",
+      "value_id": null,
+      "value_name": "889842651317",
+      "value_struct": null,
+      "values": [
+        {
+          "id": null,
+          "name": "889842651317",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "HEIGHT",
+      "name": "Altura",
+      "value_id": "4549167",
+      "value_name": "275 mm",
+      "value_struct": {
+        "number": 275,
+        "unit": "mm"
+      },
+      "values": [
+        {
+          "id": "4549167",
+          "name": "275 mm",
+          "struct": {
+            "number": 275,
+            "unit": "mm"
+          }
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number_unit"
+    },
+    {
+      "id": "INCLUDES_CONTROLLERS",
+      "name": "Incluye controles",
+      "value_id": "242085",
+      "value_name": "Sí",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242085",
+          "name": "Sí",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    },
+    {
+      "id": "IS_EMULATOR",
+      "name": "Es emulador",
+      "value_id": "242084",
+      "value_name": "No",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242084",
+          "name": "No",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    },
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición del ítem",
+      "value_id": "2230284",
+      "value_name": "Nuevo",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "2230284",
+          "name": "Nuevo",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "list"
+    },
+    {
+      "id": "LINE",
+      "name": "Línea",
+      "value_id": "110564",
+      "value_name": "Xbox",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "110564",
+          "name": "Xbox",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "MAIN_COLOR",
+      "name": "Color principal",
+      "value_id": "2450308",
+      "value_name": "Blanco",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "2450308",
+          "name": "Blanco",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "list"
+    },
+    {
+      "id": "MAX_FPS_NUMBER",
+      "name": "Cantidad máxima de FPS",
+      "value_id": "11337236",
+      "value_name": "120",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "11337236",
+          "name": "120",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number"
+    },
+    {
+      "id": "MAX_OUTPUT_VIDEO_RESOLUTION",
+      "name": "Resolución máxima de salida de video",
+      "value_id": "11384175",
+      "value_name": "2560 px x 1440 px",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "11384175",
+          "name": "2560 px x 1440 px",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "MEMORY_TYPES",
+      "name": "Tipos de memoria",
+      "value_id": "7667114",
+      "value_name": "GDDR6",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "7667114",
+          "name": "GDDR6",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "list"
+    },
+    {
+      "id": "MODEL",
+      "name": "Modelo",
+      "value_id": "9077975",
+      "value_name": "Xbox Series",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "9077975",
+          "name": "Xbox Series",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "MPN",
+      "name": "MPN",
+      "value_id": "11005339",
+      "value_name": "RRS-00009",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "11005339",
+          "name": "RRS-00009",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "POWER_SUPPLY_TYPE",
+      "name": "Tipo de alimentación",
+      "value_id": "8152567",
+      "value_name": "Corriente eléctrica",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "8152567",
+          "name": "Corriente eléctrica",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "list"
+    },
+    {
+      "id": "PROCESSOR",
+      "name": "Procesador",
+      "value_id": "9769994",
+      "value_name": "AMD Ryzen Zen 2",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "9769994",
+          "name": "AMD Ryzen Zen 2",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "PROCESSOR_SPEED",
+      "name": "Velocidad del procesador",
+      "value_id": "7875413",
+      "value_name": "3.6 GHz",
+      "value_struct": {
+        "number": 3.6,
+        "unit": "GHz"
+      },
+      "values": [
+        {
+          "id": "7875413",
+          "name": "3.6 GHz",
+          "struct": {
+            "number": 3.6,
+            "unit": "GHz"
+          }
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number_unit"
+    },
+    {
+      "id": "RAM_MEMORY",
+      "name": "Memoria RAM",
+      "value_id": "3502627",
+      "value_name": "10 GB",
+      "value_struct": {
+        "number": 10,
+        "unit": "GB"
+      },
+      "values": [
+        {
+          "id": "3502627",
+          "name": "10 GB",
+          "struct": {
+            "number": 10,
+            "unit": "GB"
+          }
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number_unit"
+    },
+    {
+      "id": "SUBMODEL",
+      "name": "Submodelo",
+      "value_id": "5171926",
+      "value_name": "S",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "5171926",
+          "name": "S",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "WEIGHT",
+      "name": "Peso",
+      "value_id": "9614450",
+      "value_name": "1.928 kg",
+      "value_struct": {
+        "number": 1.928,
+        "unit": "kg"
+      },
+      "values": [
+        {
+          "id": "9614450",
+          "name": "1.928 kg",
+          "struct": {
+            "number": 1.928,
+            "unit": "kg"
+          }
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number_unit"
+    },
+    {
+      "id": "WIDTH",
+      "name": "Ancho",
+      "value_id": "3051892",
+      "value_name": "65 mm",
+      "value_struct": {
+        "number": 65,
+        "unit": "mm"
+      },
+      "values": [
+        {
+          "id": "3051892",
+          "name": "65 mm",
+          "struct": {
+            "number": 65,
+            "unit": "mm"
+          }
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number_unit"
+    },
+    {
+      "id": "WITH_BLUETOOTH",
+      "name": "Con Bluetooth",
+      "value_id": "242085",
+      "value_name": "Sí",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242085",
+          "name": "Sí",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    },
+    {
+      "id": "WITH_DISPLAY",
+      "name": "Con pantalla",
+      "value_id": "242084",
+      "value_name": "No",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242084",
+          "name": "No",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    },
+    {
+      "id": "WITH_HDMI",
+      "name": "Con HDMI",
+      "value_id": "242085",
+      "value_name": "Sí",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242085",
+          "name": "Sí",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    },
+    {
+      "id": "WITH_TOUCH_SCREEN",
+      "name": "Con pantalla táctil",
+      "value_id": "242084",
+      "value_name": "No",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242084",
+          "name": "No",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    },
+    {
+      "id": "WITH_USB",
+      "name": "Con USB",
+      "value_id": "242085",
+      "value_name": "Sí",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242085",
+          "name": "Sí",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    },
+    {
+      "id": "WITH_WI_FI",
+      "name": "Con Wi-Fi",
+      "value_id": "242085",
+      "value_name": "Sí",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242085",
+          "name": "Sí",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    }
+  ],
+  "warnings": [],
+  "listing_source": "",
+  "variations": [],
+  "status": "active",
+  "sub_status": [],
+  "tags": [
+    "good_quality_picture",
+    "immediate_payment",
+    "cart_eligible"
+  ],
+  "warranty": "Garantía de fábrica: 3 meses",
+  "catalog_product_id": "MCO16650345",
+  "domain_id": "MCO-GAME_CONSOLES",
+  "parent_item_id": null,
+  "differential_pricing": null,
+  "deal_ids": [],
+  "automatic_relist": false,
+  "date_created": "2022-11-01T16:03:03.000Z",
+  "last_updated": "2022-11-26T03:26:13.000Z",
+  "health": null,
+  "catalog_listing": true,
+  "channels": [
+    "marketplace"
+  ]
+}

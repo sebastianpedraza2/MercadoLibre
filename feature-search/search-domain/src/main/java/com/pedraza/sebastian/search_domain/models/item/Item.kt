@@ -3,7 +3,7 @@ package com.pedraza.sebastian.search_domain.models.item
 data class Item(
     val id: String,
     val title: String? = "",
-    val description: String? = "",
+    val description: String,
     val itemCondition: String? = "",
     val availableQuantity: Int? = 0,
     val initialQuantity: Int? = 0,

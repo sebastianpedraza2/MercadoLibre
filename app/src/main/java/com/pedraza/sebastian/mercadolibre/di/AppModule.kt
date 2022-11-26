@@ -13,12 +13,14 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
+import com.pedraza.sebastian.mercadolibre.di.MercadoLibreDispatchers.IO
 
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
     @Provides
-    fun provideDefaultDispatcher(): CoroutineDispatcher = Dispatchers.IO
+    @Dispatcher(IO)
+    fun provideIODispatcher(): CoroutineDispatcher = Dispatchers.IO
 
     @Singleton
     @Provides
