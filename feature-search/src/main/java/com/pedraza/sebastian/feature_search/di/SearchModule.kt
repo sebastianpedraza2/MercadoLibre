@@ -3,8 +3,11 @@ package com.pedraza.sebastian.feature_search.di
 import com.pedraza.sebastian.search_data.api.MercadoLibreService
 import com.pedraza.sebastian.search_data.datasource.remote.SearchRemoteDataSource
 import com.pedraza.sebastian.search_data.datasource.remote.SearchRemoteDataSourceImpl
-import com.pedraza.sebastian.search_data.repository.SearchRepository
+import com.pedraza.sebastian.search_domain.repository.SearchRepository
 import com.pedraza.sebastian.search_data.repository.SearchRepositoryImpl
+import com.pedraza.sebastian.search_domain.usecases.categories.GetCategoriesUseCase
+import com.pedraza.sebastian.search_domain.usecases.categories.GetCategoriesUseCaseImpl
+import com.pedraza.sebastian.search_domain.usecases.items.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,4 +32,19 @@ object SearchModule {
     fun provideSearchRepository(searchRemoteDataSource: SearchRemoteDataSource): SearchRepository =
         SearchRepositoryImpl(searchRemoteDataSource)
 
+    @Provides
+    fun provideGetCategoriesUseCase(searchRepository: SearchRepository): GetCategoriesUseCase =
+        GetCategoriesUseCaseImpl(searchRepository)
+
+    @Provides
+    fun provideGetItemDetailUseCase(searchRepository: SearchRepository): GetItemDetailUseCase =
+        GetItemDetailUseCaseImpl(searchRepository)
+
+    @Provides
+    fun provideGetItemsByCategoryUseCase(searchRepository: SearchRepository): GetItemsByCategoryUseCase =
+        GetItemsByCategoryUseCaseImpl(searchRepository)
+
+    @Provides
+    fun provideSearchItemsUseCase(searchRepository: SearchRepository): SearchItemsUseCase =
+        SearchItemsUseCaseImpl(searchRepository)
 }

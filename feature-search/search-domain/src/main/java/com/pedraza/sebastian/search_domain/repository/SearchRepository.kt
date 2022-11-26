@@ -1,4 +1,4 @@
-package com.pedraza.sebastian.search_data.repository
+package com.pedraza.sebastian.search_domain.repository
 
 import com.pedraza.sebastian.search_domain.models.category.Category
 import com.pedraza.sebastian.search_domain.models.item.Item
