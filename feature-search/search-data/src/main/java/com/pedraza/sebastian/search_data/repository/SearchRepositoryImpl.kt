@@ -53,5 +53,4 @@ class SearchRepositoryImpl(private val dataSource: SearchRemoteDataSource) : Sea
             Result.Error(UiText.DynamicString(error.message.toString()))
         }
     }
-
 }

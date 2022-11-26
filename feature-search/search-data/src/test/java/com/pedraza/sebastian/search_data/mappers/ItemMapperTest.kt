@@ -35,7 +35,6 @@ class ItemMapperTest {
                     valueName = "Nuevo"
                 )
             ),
-            code = 200
         )
 
         val itemDescription =
@@ -63,7 +62,6 @@ class ItemMapperTest {
                 ),
             ),
             attributes = null,
-            code = 200
         )
 
         val itemDescription =
@@ -83,7 +81,6 @@ class ItemMapperTest {
         val itemDto = generateMockItemDto(
             pictures = null,
             attributes = null,
-            code = 200
         )
 
         val itemDescription =
@@ -105,7 +102,6 @@ class ItemMapperTest {
         val itemDto = generateMockItemDto(
             pictures = null,
             attributes = null,
-            code = 200
         )
 
         val itemDescription =

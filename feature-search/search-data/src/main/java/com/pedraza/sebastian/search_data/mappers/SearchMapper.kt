@@ -6,14 +6,12 @@ import com.pedraza.sebastian.search_domain.models.search.SearchResult
 import com.pedraza.sebastian.search_domain.models.search.SearchResultItem
 
 fun SearchDto.toDomain(): SearchResult {
-    return with(results) {
-        SearchResult(
-            itemsPerPage = paging.limit,
-            pagingOffset = paging.offset,
-            primaryResults = paging.primaryResults,
-            results = getResultItems(results) ?: emptyList()
-        )
-    }
+    return SearchResult(
+        itemsPerPage = paging.limit,
+        pagingOffset = paging.offset,
+        primaryResults = paging.primaryResults,
+        results = getResultItems(results) ?: emptyList()
+    )
 }
 
 fun getResultItems(results: List<QueryResultDto>?): List<SearchResultItem>? {

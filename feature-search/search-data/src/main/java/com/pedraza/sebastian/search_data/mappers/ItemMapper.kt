@@ -7,24 +7,20 @@ import com.pedraza.sebastian.search_data.entities.dto.item.ItemDto
 import com.pedraza.sebastian.search_data.entities.dto.item.ItemPictureDto
 import com.pedraza.sebastian.search_domain.models.item.Item
 
-fun ItemDto.toDomain(itemDescriptionDto: ItemDescriptionDto): Item {
-    return with(body) {
-        Item(
-            id = id,
-            title = title.orEmpty(),
-            description = getItemDescription(itemDescriptionDto),
-            itemCondition = getItemCondition(attributes).orEmpty(),
-            availableQuantity = availableQuantity,
-            initialQuantity = initialQuantity,
-            pictures = getItemPictures(pictures).orEmpty(),
-            price = price,
-            soldQuantity = soldQuantity,
-            thumbnail = thumbnail,
-            warranty = warranty,
-            categoryId = categoryId,
-        )
-    }
-}
+fun ItemDto.toDomain(itemDescriptionDto: ItemDescriptionDto): Item = Item(
+    id = id,
+    title = title.orEmpty(),
+    description = getItemDescription(itemDescriptionDto),
+    itemCondition = getItemCondition(attributes).orEmpty(),
+    availableQuantity = availableQuantity,
+    initialQuantity = initialQuantity,
+    pictures = getItemPictures(pictures).orEmpty(),
+    price = price,
+    soldQuantity = soldQuantity,
+    thumbnail = secureThumbnail,
+    warranty = warranty,
+    categoryId = categoryId,
+)
 
 
 fun getItemCondition(attributes: List<AttributeDto>?): String? {

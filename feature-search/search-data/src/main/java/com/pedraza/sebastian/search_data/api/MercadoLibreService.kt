@@ -27,8 +27,8 @@ interface MercadoLibreService {
 
     @GET("items/{item_id}")
     suspend fun getItemDetail(
-        @Query("include_attributes") includeAttributes: String,
-        @Path("item_id") itemId: String
+        @Path("item_id") itemId: String,
+        @Query("include_attributes") includeAttributes: String
     ): Response<ItemDto>
 
     @GET("items/{item_id}/description")

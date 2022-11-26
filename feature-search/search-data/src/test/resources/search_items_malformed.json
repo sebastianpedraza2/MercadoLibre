@@ -1,0 +1,3080 @@
+{
+  "site_id": "MCO",
+  "country_default_time_zone": "GMT-05:00",
+  "query": "xbox",
+  "paging": {
+    "total": 40129,
+    "primary_results": 1000,
+    "offset": 0,
+    "limit": 10
+  },
+  "results": [
+    {
+      "id": null,
+      "site_id": "MCO",
+      "title": "Microsoft Xbox Series S 512gb Standard Color  Blanco",
+      "seller": {
+        "id": 406781619,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 1599000,
+      "prices": {
+        "id": null,
+        "prices": [
+          {
+            "id": "6",
+            "type": "standard",
+            "amount": 1599000,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-11-25T19:08:38Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "7",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 1599000,
+            "currency_id": "COP",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-11-25T19:08:49Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 4,
+      "sold_quantity": 3,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2042-10-27T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.com.co/microsoft-xbox-series-s-512gb-standard-color-blanco/p/MCO16650345",
+      "thumbnail": "http://http2.mlstatic.com/D_995465-MLA45731835097_042021-I.jpg",
+      "thumbnail_id": "995465-MLA45731835097_042021",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 44416.67,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-DC",
+        "state_name": "Bogotá D.C.",
+        "city_id": "TUNPQ0NIQTk2OTI1",
+        "city_name": "Chapinero"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-DC",
+          "name": "Bogotá D.C."
+        },
+        "city": {
+          "id": "TUNPQ0NIQTk2OTI1",
+          "name": "Chapinero"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "value_name": "Microsoft",
+          "values": [
+            {
+              "id": "15770",
+              "name": "Microsoft",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "15770",
+          "value_struct": null,
+          "source": 1
+        },
+        {
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "attribute_group_id": "OTHERS",
+          "values": [
+            {
+              "struct": null,
+              "source": 3045741222775799,
+              "id": "2230284",
+              "name": "Nuevo"
+            }
+          ],
+          "source": 3045741222775799,
+          "value_type": "list",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "value_struct": null
+        },
+        {
+          "name": "Línea",
+          "value_id": "110564",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "value_type": "string",
+          "id": "LINE",
+          "value_name": "Xbox",
+          "values": [
+            {
+              "id": "110564",
+              "name": "Xbox",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 1
+        },
+        {
+          "name": "Modelo",
+          "value_id": "9077975",
+          "value_name": "Xbox Series",
+          "values": [
+            {
+              "source": 1,
+              "id": "9077975",
+              "name": "Xbox Series",
+              "struct": null
+            }
+          ],
+          "id": "MODEL",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "value_type": "string"
+        },
+        {
+          "value_id": "5171926",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "values": [
+            {
+              "id": "5171926",
+              "name": "S",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "source": 1,
+          "value_type": "string",
+          "id": "SUBMODEL",
+          "name": "Submodelo",
+          "value_name": "S",
+          "value_struct": null
+        },
+        {
+          "id": "WEIGHT",
+          "value_name": "1.928 kg",
+          "value_type": "number_unit",
+          "name": "Peso",
+          "value_id": "9614450",
+          "value_struct": {
+            "number": 1.928,
+            "unit": "kg"
+          },
+          "values": [
+            {
+              "id": "9614450",
+              "name": "1.928 kg",
+              "struct": {
+                "number": 1.928,
+                "unit": "kg"
+              },
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1
+        }
+      ],
+      "original_price": null,
+      "category_id": "MCO2931",
+      "official_store_id": null,
+      "domain_id": "MCO-GAME_CONSOLES",
+      "catalog_product_id": "MCO16650345",
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible",
+        "best_seller_candidate"
+      ],
+      "catalog_listing": true,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": null,
+      "order_backend": 1
+    },
+    {
+      "id": "MCO887262501",
+      "site_id": "MCO",
+      "title": "Microsoft Xbox Series X 1tb Standard Color  Negro",
+      "seller": {
+        "id": 443345170,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 2899900,
+      "prices": {
+        "id": "MCO887262501",
+        "prices": [
+          {
+            "id": "66",
+            "type": "standard",
+            "amount": 3199900,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-08-24T17:05:12Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          },
+          {
+            "id": "93",
+            "type": "promotion",
+            "amount": 2749900,
+            "regular_amount": 3199900,
+            "currency_id": "COP",
+            "last_updated": "2022-11-21T05:17:58Z",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": "2022-11-21T03:00:00Z",
+              "end_time": "2022-12-01T03:59:00Z",
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {
+              "campaign_id": "P-MCO8807004",
+              "promotion_id": "OFFER-MCO887262501-573118074",
+              "promotion_type": "marketplace_campaign",
+              "discount_meli_amount": 150000,
+              "campaign_discount_percentage": 14.06,
+              "campaign_end_date": "2022-12-01T03:59:00Z",
+              "order_item_price": 2899900,
+              "funding_mode": "coupon"
+            }
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "65",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 3129900,
+            "currency_id": "COP",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-08-24T16:59:54Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 15,
+      "sold_quantity": 151,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2042-04-22T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.com.co/microsoft-xbox-series-x-1tb-standard-color-negro/p/MCO16160759",
+      "thumbnail": "http://http2.mlstatic.com/D_634621-MLA45731974326_042021-I.jpg",
+      "thumbnail_id": "634621-MLA45731974326_042021",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 80552.78,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-CUN",
+        "state_name": "Cundinamarca",
+        "city_id": "TUNPQ0NPVGFiYzZm",
+        "city_name": "Cota"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fbm_in_process",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-CUN",
+          "name": "Cundinamarca"
+        },
+        "city": {
+          "id": "TUNPQ0NPVGFiYzZm",
+          "name": "Cota"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "source": 1,
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "15770",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "value_name": "Microsoft",
+          "values": [
+            {
+              "id": "15770",
+              "name": "Microsoft",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "value_type": "string"
+        },
+        {
+          "attribute_group_name": "Otros",
+          "value_type": "list",
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "values": [
+            {
+              "source": 6808261514773724,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "source": 6808261514773724
+        },
+        {
+          "value_type": "string",
+          "value_name": "Xbox",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "id": "LINE",
+          "name": "Línea",
+          "value_id": "110564",
+          "values": [
+            {
+              "name": "Xbox",
+              "struct": null,
+              "source": 1,
+              "id": "110564"
+            }
+          ]
+        },
+        {
+          "value_name": "Xbox Series",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "value_type": "string",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "9077975",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "9077975",
+              "name": "Xbox Series",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "value_name": "38 cm",
+          "value_struct": {
+            "unit": "cm",
+            "number": 38
+          },
+          "attribute_group_id": "OTHERS",
+          "source": 4333789534002961,
+          "id": "PACKAGE_LENGTH",
+          "value_id": null,
+          "values": [
+            {
+              "struct": {
+                "number": 38,
+                "unit": "cm"
+              },
+              "source": 4333789534002961,
+              "id": null,
+              "name": "38 cm"
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "value_type": "number_unit",
+          "name": "Largo del paquete"
+        },
+        {
+          "value_name": "5980 g",
+          "attribute_group_name": "Otros",
+          "value_type": "number_unit",
+          "values": [
+            {
+              "id": null,
+              "name": "5980 g",
+              "struct": {
+                "number": 5980,
+                "unit": "g"
+              },
+              "source": 4333789534002961
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 4333789534002961,
+          "id": "PACKAGE_WEIGHT",
+          "name": "Peso del paquete",
+          "value_id": null,
+          "value_struct": {
+            "number": 5980,
+            "unit": "g"
+          }
+        },
+        {
+          "values": [
+            {
+              "source": 1,
+              "id": "6166374",
+              "name": "X",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "name": "Submodelo",
+          "value_id": "6166374",
+          "value_struct": null,
+          "value_type": "string",
+          "id": "SUBMODEL",
+          "value_name": "X",
+          "source": 1
+        },
+        {
+          "id": "WEIGHT",
+          "name": "Peso",
+          "value_name": "4.46 kg",
+          "value_struct": {
+            "number": 4.46,
+            "unit": "kg"
+          },
+          "value_id": "8171455",
+          "values": [
+            {
+              "name": "4.46 kg",
+              "struct": {
+                "number": 4.46,
+                "unit": "kg"
+              },
+              "source": 1,
+              "id": "8171455"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "value_type": "number_unit"
+        }
+      ],
+      "original_price": 3199900,
+      "category_id": "MCO2931",
+      "official_store_id": 1080,
+      "domain_id": "MCO-GAME_CONSOLES",
+      "catalog_product_id": "MCO16160759",
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible",
+        "best_seller_candidate"
+      ],
+      "catalog_listing": true,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": "WEVB91850",
+      "order_backend": 2
+    },
+    {
+      "id": "MCO885038929",
+      "site_id": "MCO",
+      "title": "Consola X-game Xb-68 Color  Negro",
+      "seller": {
+        "id": 1135555,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 59600,
+      "prices": {
+        "id": "MCO885038929",
+        "prices": [
+          {
+            "id": "5",
+            "type": "standard",
+            "amount": 59600,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-11-21T08:04:54Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "6",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 59600,
+            "currency_id": "COP",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-11-21T08:04:54Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 18,
+      "sold_quantity": 19,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2042-04-17T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.com.co/consola-x-game-xb-68-color-negro/p/MCO17800723",
+      "thumbnail": "http://http2.mlstatic.com/D_642471-MLA48851475725_012022-I.jpg",
+      "thumbnail_id": "642471-MLA48851475725_012022",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 1655.56,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-DC",
+        "state_name": "Bogotá D.C.",
+        "city_id": "TUNPQ0tFTjQyODYy",
+        "city_name": "Kennedy"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_in"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-DC",
+          "name": "Bogotá D.C."
+        },
+        "city": {
+          "id": "TUNPQ0tFTjQyODYy",
+          "name": "Kennedy"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "10210888",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "value_name": "X-Game",
+          "values": [
+            {
+              "id": "10210888",
+              "name": "X-Game",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "source": 1
+        },
+        {
+          "source": 3045741222775799,
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 3045741222775799
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "value_type": "list"
+        },
+        {
+          "source": 1000427007642219,
+          "value_type": "string",
+          "value_name": "Xbox",
+          "values": [
+            {
+              "id": "110564",
+              "name": "Xbox",
+              "struct": null,
+              "source": 1000427007642219
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "id": "LINE",
+          "name": "Línea",
+          "value_id": "110564"
+        },
+        {
+          "value_name": "XB-68",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "10210889",
+              "name": "XB-68",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "source": 1,
+          "id": "MODEL",
+          "value_id": "10210889",
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "name": "Modelo",
+          "attribute_group_id": "OTHERS"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MCO2931",
+      "official_store_id": null,
+      "domain_id": "MCO-GAME_CONSOLES",
+      "catalog_product_id": "MCO17800723",
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ],
+      "catalog_listing": true,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": null,
+      "order_backend": 3
+    },
+    {
+      "id": "MCO878909994",
+      "site_id": "MCO",
+      "title": "Microsoft Xbox 360 E 4gb Standard Color  Negro",
+      "seller": {
+        "id": 165725723,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 699990,
+      "prices": {
+        "id": "MCO878909994",
+        "prices": [
+          {
+            "id": "2",
+            "type": "standard",
+            "amount": 699990,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-05-17T23:26:01Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "3",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 679990,
+            "currency_id": "COP",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-05-17T23:26:02Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 46,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2042-04-21T20:15:12.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.com.co/microsoft-xbox-360-e-4gb-standard-color-negro/p/MCO15187454",
+      "thumbnail": "http://http2.mlstatic.com/D_698455-MLA51441020923_092022-I.jpg",
+      "thumbnail_id": "698455-MLA51441020923_092022",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 19444.17,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-DC",
+        "state_name": "Bogotá D.C.",
+        "city_id": "TUNPQ01BUjU5NzU1",
+        "city_name": "Martires"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-DC",
+          "name": "Bogotá D.C."
+        },
+        "city": {
+          "id": "TUNPQ01BUjU5NzU1",
+          "name": "Martires"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "name": "Marca",
+          "value_id": "15770",
+          "value_name": "Microsoft",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "15770",
+              "name": "Microsoft",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "id": "BRAND",
+          "source": 1
+        },
+        {
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 1572,
+          "value_type": "list",
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ]
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "id": "LINE",
+          "name": "Línea",
+          "value_id": "110564",
+          "source": 1,
+          "value_name": "Xbox",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "110564",
+              "name": "Xbox",
+              "struct": null,
+              "source": 1
+            }
+          ]
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_name": "Xbox 360",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "37472",
+              "name": "Xbox 360",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "value_id": "37472",
+          "source": 1,
+          "value_type": "string"
+        },
+        {
+          "name": "Submodelo",
+          "value_id": "7804257",
+          "value_name": "E",
+          "values": [
+            {
+              "source": 1,
+              "id": "7804257",
+              "name": "E",
+              "struct": null
+            }
+          ],
+          "value_type": "string",
+          "id": "SUBMODEL",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1
+        }
+      ],
+      "original_price": null,
+      "category_id": "MCO2931",
+      "official_store_id": null,
+      "domain_id": "MCO-GAME_CONSOLES",
+      "catalog_product_id": "MCO15187454",
+      "tags": [
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible",
+        "best_seller_candidate"
+      ],
+      "catalog_listing": true,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": null,
+      "order_backend": 4
+    },
+    {
+      "id": "MCO887286203",
+      "site_id": "MCO",
+      "title": "Microsoft Xbox Series X 1tb Standard Color Negro",
+      "seller": {
+        "id": 443345170,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 2899900,
+      "prices": {
+        "id": "MCO887286203",
+        "prices": [
+          {
+            "id": "65",
+            "type": "standard",
+            "amount": 3199900,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-08-24T17:03:59Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          },
+          {
+            "id": "92",
+            "type": "promotion",
+            "amount": 2749900,
+            "regular_amount": 3199900,
+            "currency_id": "COP",
+            "last_updated": "2022-11-21T07:39:12Z",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": "2022-11-21T03:00:00Z",
+              "end_time": "2022-12-01T03:59:00Z",
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {
+              "campaign_id": "P-MCO8807004",
+              "promotion_id": "OFFER-MCO887286203-573118070",
+              "promotion_type": "marketplace_campaign",
+              "discount_meli_amount": 150000,
+              "campaign_discount_percentage": 14.06,
+              "campaign_end_date": "2022-12-01T03:59:00Z",
+              "order_item_price": 2899900,
+              "funding_mode": "coupon"
+            }
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "64",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 3129900,
+            "currency_id": "COP",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-08-24T16:59:21Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2042-04-22T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.co/MCO-887286203-microsoft-xbox-series-x-1tb-standard-color-negro-_JM",
+      "thumbnail": "http://http2.mlstatic.com/D_634621-MLA45731974326_042021-I.jpg",
+      "thumbnail_id": "634621-MLA45731974326_042021",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 80552.78,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-CUN",
+        "state_name": "Cundinamarca",
+        "city_id": "TUNPQ0NPVGFiYzZm",
+        "city_name": "Cota"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "fbm_in_process",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-CUN",
+          "name": "Cundinamarca"
+        },
+        "city": {
+          "id": "TUNPQ0NPVGFiYzZm",
+          "name": "Cota"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "source": 6808261514773724,
+          "value_type": "string",
+          "value_name": "Microsoft",
+          "name": "Marca",
+          "value_id": "15770",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "15770",
+              "name": "Microsoft",
+              "struct": null,
+              "source": 6808261514773724
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "BRAND"
+        },
+        {
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 6808261514773724
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 6808261514773724,
+          "value_type": "list",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "value_struct": null
+        },
+        {
+          "id": "LINE",
+          "value_id": "110564",
+          "value_name": "Xbox",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "110564",
+              "name": "Xbox",
+              "struct": null,
+              "source": 6808261514773724
+            }
+          ],
+          "source": 6808261514773724,
+          "name": "Línea",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_type": "string"
+        },
+        {
+          "value_id": "9077975",
+          "value_name": "Xbox Series",
+          "source": 6808261514773724,
+          "value_type": "string",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "9077975",
+              "name": "Xbox Series",
+              "struct": null,
+              "source": 6808261514773724
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "id": "SUBMODEL",
+          "name": "Submodelo",
+          "value_name": "X",
+          "values": [
+            {
+              "name": "X",
+              "struct": null,
+              "source": 6808261514773724,
+              "id": "6166374"
+            }
+          ],
+          "value_id": "6166374",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 6808261514773724
+        },
+        {
+          "value_type": "number_unit",
+          "name": "Peso",
+          "value_id": "8171455",
+          "value_struct": {
+            "number": 4.46,
+            "unit": "kg"
+          },
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 7567447101417086,
+          "id": "WEIGHT",
+          "value_name": "4.46 kg",
+          "values": [
+            {
+              "name": "4.46 kg",
+              "struct": {
+                "number": 4.46,
+                "unit": "kg"
+              },
+              "source": 7567447101417086,
+              "id": "8171455"
+            }
+          ]
+        }
+      ],
+      "original_price": 3199900,
+      "category_id": "MCO2931",
+      "official_store_id": 1080,
+      "domain_id": "MCO-GAME_CONSOLES",
+      "catalog_product_id": "MCO16160758",
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ],
+      "order_backend": 5,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": null
+    },
+    {
+      "id": "MCO657144958",
+      "site_id": "MCO",
+      "title": "Consola Xbox Series X 1tb 1 Control 1 Año De Garantia",
+      "seller": {
+        "id": 783790319,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 3149900,
+      "prices": {
+        "id": "MCO657144958",
+        "prices": [
+          {
+            "id": "137",
+            "type": "standard",
+            "amount": 3149900,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-11-23T00:16:44Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          },
+          {
+            "id": "138",
+            "type": "promotion",
+            "amount": 2992405,
+            "regular_amount": 3149900,
+            "currency_id": "COP",
+            "last_updated": "2022-11-23T00:16:53Z",
+            "conditions": {
+              "context_restrictions": [
+                "channel_mshops"
+              ],
+              "start_time": "2022-04-27T06:58:52Z",
+              "end_time": "2023-01-01T04:59:59Z",
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {
+              "promotion_id": "TR-783790319-20220427025907597:MCO657144958",
+              "promotion_type": "custom"
+            }
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "132",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 2742561,
+            "currency_id": "COP",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-10-13T00:57:05Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 50,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2041-08-13T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.co/MCO-657144958-consola-xbox-series-x-1tb-1-control-1-ano-de-garantia-_JM",
+      "thumbnail": "http://http2.mlstatic.com/D_634621-MLA45731974326_042021-I.jpg",
+      "thumbnail_id": "634621-MLA45731974326_042021",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 87497.22,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-DC",
+        "state_name": "Bogotá D.C.",
+        "city_id": "TUNPQ1BVRTg0NTU0",
+        "city_name": "Puente Aranda"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-DC",
+          "name": "Bogotá D.C."
+        },
+        "city": {
+          "id": "TUNPQ1BVRTg0NTU0",
+          "name": "Puente Aranda"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "values": [
+            {
+              "struct": null,
+              "source": 3045741222775799,
+              "id": "15770",
+              "name": "Microsoft"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 3045741222775799,
+          "id": "BRAND",
+          "value_id": "15770",
+          "value_name": "Microsoft",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "value_type": "string"
+        },
+        {
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": 3045741222775799,
+              "id": "2230284"
+            }
+          ],
+          "source": 3045741222775799,
+          "value_type": "list",
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "value_id": "2230284",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "value_name": "Xbox",
+          "attribute_group_name": "Otros",
+          "source": 3045741222775799,
+          "value_type": "string",
+          "id": "LINE",
+          "name": "Línea",
+          "value_id": "110564",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "110564",
+              "name": "Xbox",
+              "struct": null,
+              "source": 3045741222775799
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "name": "Modelo",
+          "value_name": "Xbox Series",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 3045741222775799,
+          "id": "MODEL",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "9077975",
+              "name": "Xbox Series",
+              "struct": null,
+              "source": 3045741222775799
+            }
+          ],
+          "value_type": "string",
+          "value_id": "9077975"
+        },
+        {
+          "id": "SUBMODEL",
+          "values": [
+            {
+              "id": "6166374",
+              "name": "X",
+              "struct": null,
+              "source": 3045741222775799
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 3045741222775799,
+          "value_type": "string",
+          "name": "Submodelo",
+          "value_id": "6166374",
+          "value_name": "X",
+          "value_struct": null,
+          "attribute_group_name": "Otros"
+        },
+        {
+          "attribute_group_name": "Otros",
+          "source": 7567447101417086,
+          "value_type": "number_unit",
+          "id": "WEIGHT",
+          "name": "Peso",
+          "value_struct": {
+            "number": 9.8,
+            "unit": "lb"
+          },
+          "values": [
+            {
+              "id": "9702958",
+              "name": "9.8 lb",
+              "struct": {
+                "number": 9.8,
+                "unit": "lb"
+              },
+              "source": 7567447101417086
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "value_id": "9702958",
+          "value_name": "9.8 lb"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MCO2931",
+      "official_store_id": null,
+      "domain_id": "MCO-GAME_CONSOLES",
+      "catalog_product_id": "MCO16160758",
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ],
+      "order_backend": 6,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": null
+    },
+    {
+      "id": "MCO605327377",
+      "site_id": "MCO",
+      "title": "Consola Xbox Series X De 1t. Dos Controles. Nueva Y Sellada.",
+      "seller": {
+        "id": 78429260,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 3449900,
+      "prices": {
+        "id": "MCO605327377",
+        "prices": [
+          {
+            "id": "37",
+            "type": "standard",
+            "amount": 3449900,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-11-03T17:06:24Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "26",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 3449900,
+            "currency_id": "COP",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-03-09T21:19:14Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 1,
+      "sold_quantity": 5,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2041-01-27T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.co/MCO-605327377-consola-xbox-series-x-de-1t-dos-controles-nueva-y-sellada-_JM",
+      "thumbnail": "http://http2.mlstatic.com/D_600404-MCO44961559921_022021-I.jpg",
+      "thumbnail_id": "600404-MCO44961559921_022021",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 95830.56,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-DC",
+        "state_name": "Bogotá D.C.",
+        "city_id": "TUNPQ1BVRTg0NTU0",
+        "city_name": "Puente Aranda"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-DC",
+          "name": "Bogotá D.C."
+        },
+        "city": {
+          "id": "TUNPQ1BVRTg0NTU0",
+          "name": "Puente Aranda"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "values": [
+            {
+              "id": "15770",
+              "name": "Microsoft",
+              "struct": null,
+              "source": 2860837171021627
+            }
+          ],
+          "source": 2860837171021627,
+          "value_type": "string",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "15770",
+          "value_name": "Microsoft",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "name": "Condición del ítem",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 2860837171021627,
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": 2860837171021627,
+              "id": "2230284"
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "value_type": "list"
+        },
+        {
+          "value_struct": null,
+          "values": [
+            {
+              "id": "110564",
+              "name": "Xbox",
+              "struct": null,
+              "source": 2860837171021627
+            }
+          ],
+          "source": 2860837171021627,
+          "id": "LINE",
+          "name": "Línea",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "value_id": "110564",
+          "value_name": "Xbox"
+        },
+        {
+          "value_name": "Xbox Series",
+          "values": [
+            {
+              "name": "Xbox Series",
+              "struct": null,
+              "source": 2860837171021627,
+              "id": "9077975"
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "source": 2860837171021627,
+          "id": "MODEL",
+          "name": "Modelo",
+          "attribute_group_id": "OTHERS",
+          "value_type": "string",
+          "value_id": "9077975",
+          "value_struct": null
+        },
+        {
+          "value_type": "string",
+          "id": "SUBMODEL",
+          "value_id": "6166374",
+          "value_name": "X",
+          "values": [
+            {
+              "source": 2860837171021627,
+              "id": "6166374",
+              "name": "X",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "name": "Submodelo",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "source": 2860837171021627
+        },
+        {
+          "value_name": "4.46 kg",
+          "values": [
+            {
+              "source": 3942444344910321,
+              "id": "8171455",
+              "name": "4.46 kg",
+              "struct": {
+                "number": 4.46,
+                "unit": "kg"
+              }
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "value_type": "number_unit",
+          "id": "WEIGHT",
+          "name": "Peso",
+          "value_id": "8171455",
+          "value_struct": {
+            "number": 4.46,
+            "unit": "kg"
+          },
+          "attribute_group_id": "OTHERS",
+          "source": 3942444344910321
+        }
+      ],
+      "original_price": null,
+      "category_id": "MCO2931",
+      "official_store_id": null,
+      "domain_id": "MCO-GAME_CONSOLES",
+      "catalog_product_id": null,
+      "tags": [
+        "good_quality_thumbnail",
+        "loyalty_discount_eligible",
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ],
+      "order_backend": 7,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": null
+    },
+    {
+      "id": "MCO837751762",
+      "site_id": "MCO",
+      "title": "Xbox Series X 1tb + Call Of Duty Vanguard Fisico",
+      "seller": {
+        "id": 139725231,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 3486900,
+      "prices": {
+        "id": "MCO837751762",
+        "prices": [
+          {
+            "id": "14",
+            "type": "standard",
+            "amount": 3486900,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-04-01T02:28:50Z",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          },
+          {
+            "id": "15",
+            "type": "standard",
+            "amount": 3399500,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-04-01T02:29:19Z",
+            "conditions": {
+              "context_restrictions": [
+                "channel_mshops"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [
+          {
+            "id": "12",
+            "type": "min_standard",
+            "conditions": {
+              "context_restrictions": [
+                "channel_marketplace"
+              ],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "amount": 3299500,
+            "currency_id": "COP",
+            "exchange_rate_context": "DEFAULT",
+            "tags": [],
+            "last_updated": "2022-03-12T16:39:12Z"
+          }
+        ],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 1,
+      "sold_quantity": 2,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2041-11-25T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.co/MCO-837751762-xbox-series-x-1tb-call-of-duty-vanguard-fisico-_JM",
+      "thumbnail": "http://http2.mlstatic.com/D_796117-MCO48393632188_112021-I.jpg",
+      "thumbnail_id": "796117-MCO48393632188_112021",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 96858.33,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-DC",
+        "state_name": "Bogotá D.C.",
+        "city_id": "TUNPQ0tFTjQyODYy",
+        "city_name": "Kennedy"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-DC",
+          "name": "Bogotá D.C."
+        },
+        "city": {
+          "id": "TUNPQ0tFTjQyODYy",
+          "name": "Kennedy"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "source": 2860837171021627,
+          "id": "BRAND",
+          "value_id": "15770",
+          "value_name": "Microsoft",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "15770",
+              "name": "Microsoft",
+              "struct": null,
+              "source": 2860837171021627
+            }
+          ],
+          "name": "Marca",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_type": "string"
+        },
+        {
+          "name": "Condición del ítem",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "value_type": "list",
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "source": 2860837171021627,
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 2860837171021627
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "source": 2860837171021627,
+          "value_type": "string",
+          "value_name": "Xbox",
+          "name": "Línea",
+          "value_id": "110564",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "110564",
+              "name": "Xbox",
+              "struct": null,
+              "source": 2860837171021627
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "id": "LINE"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "9077975",
+          "attribute_group_name": "Otros",
+          "source": 2860837171021627,
+          "value_type": "string",
+          "value_name": "Xbox Series",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "Xbox Series",
+              "struct": null,
+              "source": 2860837171021627,
+              "id": "9077975"
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "values": [
+            {
+              "struct": null,
+              "source": 2860837171021627,
+              "id": "6166374",
+              "name": "X"
+            }
+          ],
+          "source": 2860837171021627,
+          "value_id": "6166374",
+          "value_name": "X",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "id": "SUBMODEL",
+          "name": "Submodelo",
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "values": [
+            {
+              "name": "4.46 kg",
+              "struct": {
+                "number": 4.46,
+                "unit": "kg"
+              },
+              "source": 3942444344910321,
+              "id": "8171455"
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "value_type": "number_unit",
+          "id": "WEIGHT",
+          "value_name": "4.46 kg",
+          "value_struct": {
+            "number": 4.46,
+            "unit": "kg"
+          },
+          "attribute_group_id": "OTHERS",
+          "source": 3942444344910321,
+          "name": "Peso",
+          "value_id": "8171455"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MCO2931",
+      "official_store_id": null,
+      "domain_id": "MCO-GAME_CONSOLES",
+      "catalog_product_id": "MCO16160758",
+      "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "standard_price_by_channel",
+        "immediate_payment",
+        "cart_eligible"
+      ],
+      "order_backend": 8,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": null
+    },
+    {
+      "id": "MCO823956846",
+      "site_id": "MCO",
+      "title": "Audífonos Gamer Kotion G2000 Negro Y Azul Con Luz Led",
+      "seller": {
+        "id": 684620259,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 53000,
+      "prices": {
+        "id": "MCO823956846",
+        "prices": [
+          {
+            "id": "7",
+            "type": "standard",
+            "amount": 53000,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2022-02-03T22:20:44Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 2,
+      "sold_quantity": 131,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2041-10-16T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.com.co/audifonos-gamer-kotion-g2000-negro-y-azul-con-luz-led/p/MCO6351840",
+      "thumbnail": "http://http2.mlstatic.com/D_739748-MLA45260579840_032021-I.jpg",
+      "thumbnail_id": "739748-MLA45260579840_032021",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 1472.22,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-DC",
+        "state_name": "Bogotá D.C.",
+        "city_id": "TUNPQ0NIQTk2OTI1",
+        "city_name": "Chapinero"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-DC",
+          "name": "Bogotá D.C."
+        },
+        "city": {
+          "id": "TUNPQ0NIQTk2OTI1",
+          "name": "Chapinero"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "source": 1,
+          "attribute_group_name": "Otros",
+          "name": "Marca",
+          "value_id": "470857",
+          "value_name": "Kotion",
+          "value_struct": null,
+          "values": [
+            {
+              "source": 1,
+              "id": "470857",
+              "name": "Kotion",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "value_type": "string",
+          "id": "BRAND"
+        },
+        {
+          "name": "Largo del cable",
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "id": "CABLE_LENGTH",
+          "value_id": "124822",
+          "value_name": "2 m",
+          "value_struct": {
+            "number": 2,
+            "unit": "m"
+          },
+          "values": [
+            {
+              "id": "124822",
+              "name": "2 m",
+              "struct": {
+                "number": 2,
+                "unit": "m"
+              },
+              "source": 1
+            }
+          ],
+          "value_type": "number_unit"
+        },
+        {
+          "name": "Condición del ítem",
+          "value_name": "Nuevo",
+          "values": [
+            {
+              "name": "Nuevo",
+              "struct": null,
+              "source": 6808261514773724,
+              "id": "2230284"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 6808261514773724,
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "value_type": "list"
+        },
+        {
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "name": "Modelo",
+          "value_id": "444680",
+          "values": [
+            {
+              "id": "444680",
+              "name": "G2000",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1,
+          "id": "MODEL",
+          "value_name": "G2000"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MCO31377",
+      "official_store_id": null,
+      "domain_id": "MCO-HEADPHONES",
+      "catalog_product_id": "MCO6351840",
+      "tags": [
+        "good_quality_picture",
+        "loyalty_discount_eligible",
+        "immediate_payment",
+        "cart_eligible",
+        "best_seller_candidate"
+      ],
+      "catalog_listing": true,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": null,
+      "order_backend": 9
+    },
+    {
+      "id": "MCO582165085",
+      "site_id": "MCO",
+      "title": "Xbox 360 Ultra Slim E 5.0 + Disco 500gb 200j +2 Controles Cj",
+      "seller": {
+        "id": 154106261,
+        "permalink": null,
+        "registration_date": null,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": null
+      },
+      "price": 899900,
+      "prices": {
+        "id": "MCO582165085",
+        "prices": [
+          {
+            "id": "1",
+            "type": "standard",
+            "amount": 899900,
+            "regular_amount": null,
+            "currency_id": "COP",
+            "last_updated": "2021-06-08T23:27:24Z",
+            "conditions": {
+              "context_restrictions": [],
+              "start_time": null,
+              "end_time": null,
+              "eligible": true
+            },
+            "exchange_rate_context": "DEFAULT",
+            "metadata": {}
+          }
+        ],
+        "presentation": {
+          "display_currency": "COP"
+        },
+        "payment_method_prices": [],
+        "reference_prices": [],
+        "purchase_discounts": []
+      },
+      "sale_price": null,
+      "currency_id": "COP",
+      "available_quantity": 1,
+      "sold_quantity": 100,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2041-05-30T21:43:24.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.co/MCO-582165085-xbox-360-ultra-slim-e-50-disco-500gb-200j-2-controles-cj-_JM",
+      "thumbnail": "http://http2.mlstatic.com/D_695650-MCO43441128243_092020-I.jpg",
+      "thumbnail_id": "695650-MCO43441128243_092020",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 36,
+        "amount": 24997.22,
+        "rate": 0,
+        "currency_id": "COP"
+      },
+      "address": {
+        "state_id": "CO-DC",
+        "state_name": "Bogotá D.C.",
+        "city_id": "TUNPQ1BVRTg0NTU0",
+        "city_name": "Puente Aranda"
+      },
+      "promotions": null,
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "state": {
+          "id": "CO-DC",
+          "name": "Bogotá D.C."
+        },
+        "city": {
+          "id": "TUNPQ1BVRTg0NTU0",
+          "name": "Puente Aranda"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "values": [
+            {
+              "id": "15770",
+              "name": "Microsoft",
+              "struct": null,
+              "source": 2860837171021627
+            }
+          ],
+          "source": 2860837171021627,
+          "name": "Marca",
+          "value_id": "15770",
+          "value_name": "Microsoft",
+          "attribute_group_name": "Otros",
+          "value_type": "string",
+          "id": "BRAND",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "value_struct": null,
+          "value_type": "list",
+          "source": 2860837171021627,
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230582",
+          "value_name": "Reacondicionado",
+          "values": [
+            {
+              "id": "2230582",
+              "name": "Reacondicionado",
+              "struct": null,
+              "source": 2860837171021627
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        },
+        {
+          "value_id": "110564",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 7567447101417086,
+          "value_type": "string",
+          "id": "LINE",
+          "name": "Línea",
+          "attribute_group_name": "Otros",
+          "value_name": "Xbox",
+          "values": [
+            {
+              "struct": null,
+              "source": 7567447101417086,
+              "id": "110564",
+              "name": "Xbox"
+            }
+          ]
+        },
+        {
+          "id": "MODEL",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "source": 3376461333454861,
+          "name": "Modelo",
+          "value_id": "37472",
+          "value_name": "Xbox 360",
+          "values": [
+            {
+              "id": "37472",
+              "name": "Xbox 360",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "attribute_group_name": "Otros",
+          "value_type": "string"
+        },
+        {
+          "id": "SUBMODEL",
+          "name": "Submodelo",
+          "value_name": "Slim E",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "value_id": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Slim E",
+              "struct": null,
+              "source": 3376461333454861
+            }
+          ],
+          "source": 3376461333454861,
+          "value_type": "string"
+        }
+      ],
+      "original_price": null,
+      "category_id": "MCO2931",
+      "official_store_id": null,
+      "domain_id": "MCO-GAME_CONSOLES",
+      "catalog_product_id": "MCO6252186",
+      "tags": [
+        "loyalty_discount_eligible",
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible",
+        "best_seller_candidate"
+      ],
+      "order_backend": 10,
+      "use_thumbnail_id": true,
+      "offer_score": null,
+      "offer_share": null,
+      "match_score": null,
+      "winner_item_id": null,
+      "melicoin": null,
+      "discounts": null,
+      "inventory_id": null
+    }
+  ],
+  "sort": {
+    "id": "relevance",
+    "name": "Más relevantes"
+  },
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Menor precio"
+    },
+    {
+      "id": "price_desc",
+      "name": "Mayor precio"
+    }
+  ],
+  "filters": [
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MCO1144",
+          "name": "Consolas y Videojuegos",
+          "path_from_root": [
+            {
+              "id": "MCO1144",
+              "name": "Consolas y Videojuegos"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "available_filters": [
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MCO2931",
+          "name": "Consolas",
+          "results": 1623
+        },
+        {
+          "id": "MCO163237",
+          "name": "Videojuegos",
+          "results": 20196
+        },
+        {
+          "id": "MCO438578",
+          "name": "Accesorios para Consolas",
+          "results": 14546
+        },
+        {
+          "id": "MCO439527",
+          "name": "Accesorios para PC Gaming",
+          "results": 3099
+        },
+        {
+          "id": "MCO438579",
+          "name": "Repuestos para Consolas",
+          "results": 593
+        },
+        {
+          "id": "MCO441255",
+          "name": "Pinballs y Máquinas de Juego",
+          "results": 28
+        },
+        {
+          "id": "MCO438759",
+          "name": "Otros",
+          "results": 44
+        }
+      ]
+    },
+    {
+      "id": "official_store",
+      "name": "Tiendas oficiales",
+      "type": "text",
+      "values": [
+        {
+          "id": "all",
+          "name": "Todas las tiendas oficiales",
+          "results": 96
+        },
+        {
+          "id": "1080",
+          "name": "Comprandoando",
+          "results": 16
+        }
+      ]
+    },
+    {
+      "id": "discount",
+      "name": "Descuentos",
+      "type": "number",
+      "values": [
+        {
+          "id": "5-100",
+          "name": "Desde 5% OFF",
+          "results": 330
+        },
+        {
+          "id": "10-100",
+          "name": "Desde 10% OFF",
+          "results": 233
+        },
+        {
+          "id": "15-100",
+          "name": "Desde 15% OFF",
+          "results": 172
+        },
+        {
+          "id": "20-100",
+          "name": "Desde 20% OFF",
+          "results": 139
+        },
+        {
+          "id": "25-100",
+          "name": "Desde 25% OFF",
+          "results": 79
+        },
+        {
+          "id": "30-100",
+          "name": "Desde 30% OFF",
+          "results": 59
+        },
+        {
+          "id": "40-100",
+          "name": "Desde 40% OFF",
+          "results": 31
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "Ubicación",
+      "type": "text",
+      "values": [
+        {
+          "id": "CO-DC",
+          "name": "Bogotá D.C.",
+          "results": 18804
+        },
+        {
+          "id": "CO-CES",
+          "name": "Cesar",
+          "results": 7318
+        },
+        {
+          "id": "CO-ANT",
+          "name": "Antioquia",
+          "results": 5799
+        },
+        {
+          "id": "CO-CUN",
+          "name": "Cundinamarca",
+          "results": 1315
+        },
+        {
+          "id": "CO-VAC",
+          "name": "Valle Del Cauca",
+          "results": 868
+        },
+        {
+          "id": "CO-MET",
+          "name": "Meta",
+          "results": 723
+        },
+        {
+          "id": "CO-RIS",
+          "name": "Risaralda",
+          "results": 523
+        },
+        {
+          "id": "CO-BOL",
+          "name": "Bolivar",
+          "results": 521
+        },
+        {
+          "id": "CO-NSA",
+          "name": "Norte De Santander",
+          "results": 464
+        },
+        {
+          "id": "CO-ATL",
+          "name": "Atlantico",
+          "results": 420
+        },
+        {
+          "id": "CO-SAN",
+          "name": "Santander",
+          "results": 410
+        },
+        {
+          "id": "CO-CAS",
+          "name": "Casanare",
+          "results": 247
+        },
+        {
+          "id": "CO-CAL",
+          "name": "Caldas",
+          "results": 196
+        },
+        {
+          "id": "CO-BOY",
+          "name": "Boyaca",
+          "results": 173
+        },
+        {
+          "id": "CO-NAR",
+          "name": "Nariño",
+          "results": 158
+        },
+        {
+          "id": "CO-HUI",
+          "name": "Huila",
+          "results": 119
+        },
+        {
+          "id": "CO-TOL",
+          "name": "Tolima",
+          "results": 88
+        },
+        {
+          "id": "CO-CAU",
+          "name": "Cauca",
+          "results": 70
+        },
+        {
+          "id": "CO-QUI",
+          "name": "Quindio",
+          "results": 46
+        },
+        {
+          "id": "CO-SUC",
+          "name": "Sucre",
+          "results": 29
+        },
+        {
+          "id": "CO-MAG",
+          "name": "Magdalena",
+          "results": 27
+        },
+        {
+          "id": "CO-CAQ",
+          "name": "Caqueta",
+          "results": 22
+        },
+        {
+          "id": "CO-COR",
+          "name": "Córdoba",
+          "results": 16
+        },
+        {
+          "id": "CO-LAG",
+          "name": "Guajira",
+          "results": 16
+        },
+        {
+          "id": "CO-PUT",
+          "name": "Putumayo",
+          "results": 10
+        },
+        {
+          "id": "CO-ARA",
+          "name": "Arauca",
+          "results": 4
+        },
+        {
+          "id": "CO-CHO",
+          "name": "Choco",
+          "results": 4
+        },
+        {
+          "id": "CO-SAP",
+          "name": "San Andres y Providencia",
+          "results": 3
+        },
+        {
+          "id": "CO-AMA",
+          "name": "Amazonas",
+          "results": 1
+        },
+        {
+          "id": "CO-GUV",
+          "name": "Guaviare",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "name": "Precio",
+      "type": "range",
+      "values": [
+        {
+          "id": "*-100000.0",
+          "name": "Hasta $100.000",
+          "results": 10395
+        },
+        {
+          "id": "100000.0-200000.0",
+          "name": "$100.000 a $200.000",
+          "results": 13821
+        },
+        {
+          "id": "200000.0-*",
+          "name": "Más de $200.000",
+          "results": 15913
+        }
+      ]
+    },
+    {
+      "id": "accepts_mercadopago",
+      "name": "Filtro por MercadoPago",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con MercadoPago",
+          "results": 40129
+        }
+      ]
+    },
+    {
+      "id": "installments",
+      "name": "Pago",
+      "type": "text",
+      "values": [
+        {
+          "id": "yes",
+          "name": "En cuotas",
+          "results": 40128
+        },
+        {
+          "id": "no_interest",
+          "name": "Cuotas sin interés",
+          "results": 8839
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "mercadoenvios",
+          "name": "Mercado Envíos",
+          "results": 38701
+        },
+        {
+          "id": "fulfillment",
+          "name": "Full",
+          "results": 104
+        }
+      ]
+    },
+    {
+      "id": "power_seller",
+      "name": "Filtro por calidad de vendedores",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Mejores vendedores",
+          "results": 16756
+        }
+      ]
+    },
+    {
+      "id": "since",
+      "name": "Filtro por fecha de comienzo",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Publicados hoy",
+          "results": 89
+        }
+      ]
+    },
+    {
+      "id": "until",
+      "name": "Filtro por fecha de finalización",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Finalizan hoy",
+          "results": 10
+        }
+      ]
+    },
+    {
+      "id": "has_video",
+      "name": "Filtro por publicaciones con video",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Publicaciones con video",
+          "results": 1887
+        }
+      ]
+    },
+    {
+      "id": "has_pictures",
+      "name": "Filtro por publicaciones con imágenes",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con fotos",
+          "results": 40123
+        }
+      ]
+    },
+    {
+      "id": "all_payment_methods_discount",
+      "name": "Descuentos para todos los medios de pago",
+      "type": "number",
+      "values": [
+        {
+          "id": "5-100",
+          "name": "Desde 5% OFF",
+          "results": 38
+        },
+        {
+          "id": "10-100",
+          "name": "Desde 10% OFF",
+          "results": 27
+        },
+        {
+          "id": "15-100",
+          "name": "Desde 15% OFF",
+          "results": 6
+        },
+        {
+          "id": "20-100",
+          "name": "Desde 20% OFF",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "price_campaign_id",
+      "name": "Campaña",
+      "type": "number",
+      "values": [
+        {
+          "id": "P-MCO8807004",
+          "name": "P-MCO8807004",
+          "results": 4
+        },
+        {
+          "id": "MCO7626",
+          "name": "MCO7626",
+          "results": 3
+        },
+        {
+          "id": "P-MCO8733029",
+          "name": "P-MCO8733029",
+          "results": 2
+        },
+        {
+          "id": "MCO2298",
+          "name": "MCO2298",
+          "results": 2
+        }
+      ]
+    },
+    {
+      "id": "shipping_cost",
+      "name": "Costo de envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "free",
+          "name": "Gratis",
+          "results": 31309
+        }
+      ]
+    },
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "2230284",
+          "name": "Nuevo",
+          "results": 33027
+        },
+        {
+          "id": "2230581",
+          "name": "Usado",
+          "results": 6928
+        },
+        {
+          "id": "2230582",
+          "name": "Reacondicionado",
+          "results": 161
+        }
+      ]
+    },
+    {
+      "id": "SHIPPING_ORIGIN",
+      "name": "Tipo de compra",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "10215068",
+          "name": "Local",
+          "results": 38420
+        },
+        {
+          "id": "10215069",
+          "name": "Internacional",
+          "results": 1709
+        }
+      ]
+    }
+  ]
+}

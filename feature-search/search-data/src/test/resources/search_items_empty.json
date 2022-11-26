@@ -1,0 +1,538 @@
+{
+  "site_id": "MCO",
+  "country_default_time_zone": "GMT-05:00",
+  "query": "xbox",
+  "paging": {
+    "total": 40129,
+    "primary_results": 1000,
+    "offset": 0,
+    "limit": 10
+  },
+  "results": [],
+  "sort": {
+    "id": "relevance",
+    "name": "Más relevantes"
+  },
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Menor precio"
+    },
+    {
+      "id": "price_desc",
+      "name": "Mayor precio"
+    }
+  ],
+  "filters": [
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MCO1144",
+          "name": "Consolas y Videojuegos",
+          "path_from_root": [
+            {
+              "id": "MCO1144",
+              "name": "Consolas y Videojuegos"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "available_filters": [
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MCO2931",
+          "name": "Consolas",
+          "results": 1623
+        },
+        {
+          "id": "MCO163237",
+          "name": "Videojuegos",
+          "results": 20196
+        },
+        {
+          "id": "MCO438578",
+          "name": "Accesorios para Consolas",
+          "results": 14546
+        },
+        {
+          "id": "MCO439527",
+          "name": "Accesorios para PC Gaming",
+          "results": 3099
+        },
+        {
+          "id": "MCO438579",
+          "name": "Repuestos para Consolas",
+          "results": 593
+        },
+        {
+          "id": "MCO441255",
+          "name": "Pinballs y Máquinas de Juego",
+          "results": 28
+        },
+        {
+          "id": "MCO438759",
+          "name": "Otros",
+          "results": 44
+        }
+      ]
+    },
+    {
+      "id": "official_store",
+      "name": "Tiendas oficiales",
+      "type": "text",
+      "values": [
+        {
+          "id": "all",
+          "name": "Todas las tiendas oficiales",
+          "results": 96
+        },
+        {
+          "id": "1080",
+          "name": "Comprandoando",
+          "results": 16
+        }
+      ]
+    },
+    {
+      "id": "discount",
+      "name": "Descuentos",
+      "type": "number",
+      "values": [
+        {
+          "id": "5-100",
+          "name": "Desde 5% OFF",
+          "results": 330
+        },
+        {
+          "id": "10-100",
+          "name": "Desde 10% OFF",
+          "results": 233
+        },
+        {
+          "id": "15-100",
+          "name": "Desde 15% OFF",
+          "results": 172
+        },
+        {
+          "id": "20-100",
+          "name": "Desde 20% OFF",
+          "results": 139
+        },
+        {
+          "id": "25-100",
+          "name": "Desde 25% OFF",
+          "results": 79
+        },
+        {
+          "id": "30-100",
+          "name": "Desde 30% OFF",
+          "results": 59
+        },
+        {
+          "id": "40-100",
+          "name": "Desde 40% OFF",
+          "results": 31
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "Ubicación",
+      "type": "text",
+      "values": [
+        {
+          "id": "CO-DC",
+          "name": "Bogotá D.C.",
+          "results": 18804
+        },
+        {
+          "id": "CO-CES",
+          "name": "Cesar",
+          "results": 7318
+        },
+        {
+          "id": "CO-ANT",
+          "name": "Antioquia",
+          "results": 5799
+        },
+        {
+          "id": "CO-CUN",
+          "name": "Cundinamarca",
+          "results": 1315
+        },
+        {
+          "id": "CO-VAC",
+          "name": "Valle Del Cauca",
+          "results": 868
+        },
+        {
+          "id": "CO-MET",
+          "name": "Meta",
+          "results": 723
+        },
+        {
+          "id": "CO-RIS",
+          "name": "Risaralda",
+          "results": 523
+        },
+        {
+          "id": "CO-BOL",
+          "name": "Bolivar",
+          "results": 521
+        },
+        {
+          "id": "CO-NSA",
+          "name": "Norte De Santander",
+          "results": 464
+        },
+        {
+          "id": "CO-ATL",
+          "name": "Atlantico",
+          "results": 420
+        },
+        {
+          "id": "CO-SAN",
+          "name": "Santander",
+          "results": 410
+        },
+        {
+          "id": "CO-CAS",
+          "name": "Casanare",
+          "results": 247
+        },
+        {
+          "id": "CO-CAL",
+          "name": "Caldas",
+          "results": 196
+        },
+        {
+          "id": "CO-BOY",
+          "name": "Boyaca",
+          "results": 173
+        },
+        {
+          "id": "CO-NAR",
+          "name": "Nariño",
+          "results": 158
+        },
+        {
+          "id": "CO-HUI",
+          "name": "Huila",
+          "results": 119
+        },
+        {
+          "id": "CO-TOL",
+          "name": "Tolima",
+          "results": 88
+        },
+        {
+          "id": "CO-CAU",
+          "name": "Cauca",
+          "results": 70
+        },
+        {
+          "id": "CO-QUI",
+          "name": "Quindio",
+          "results": 46
+        },
+        {
+          "id": "CO-SUC",
+          "name": "Sucre",
+          "results": 29
+        },
+        {
+          "id": "CO-MAG",
+          "name": "Magdalena",
+          "results": 27
+        },
+        {
+          "id": "CO-CAQ",
+          "name": "Caqueta",
+          "results": 22
+        },
+        {
+          "id": "CO-COR",
+          "name": "Córdoba",
+          "results": 16
+        },
+        {
+          "id": "CO-LAG",
+          "name": "Guajira",
+          "results": 16
+        },
+        {
+          "id": "CO-PUT",
+          "name": "Putumayo",
+          "results": 10
+        },
+        {
+          "id": "CO-ARA",
+          "name": "Arauca",
+          "results": 4
+        },
+        {
+          "id": "CO-CHO",
+          "name": "Choco",
+          "results": 4
+        },
+        {
+          "id": "CO-SAP",
+          "name": "San Andres y Providencia",
+          "results": 3
+        },
+        {
+          "id": "CO-AMA",
+          "name": "Amazonas",
+          "results": 1
+        },
+        {
+          "id": "CO-GUV",
+          "name": "Guaviare",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "name": "Precio",
+      "type": "range",
+      "values": [
+        {
+          "id": "*-100000.0",
+          "name": "Hasta $100.000",
+          "results": 10395
+        },
+        {
+          "id": "100000.0-200000.0",
+          "name": "$100.000 a $200.000",
+          "results": 13821
+        },
+        {
+          "id": "200000.0-*",
+          "name": "Más de $200.000",
+          "results": 15913
+        }
+      ]
+    },
+    {
+      "id": "accepts_mercadopago",
+      "name": "Filtro por MercadoPago",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con MercadoPago",
+          "results": 40129
+        }
+      ]
+    },
+    {
+      "id": "installments",
+      "name": "Pago",
+      "type": "text",
+      "values": [
+        {
+          "id": "yes",
+          "name": "En cuotas",
+          "results": 40128
+        },
+        {
+          "id": "no_interest",
+          "name": "Cuotas sin interés",
+          "results": 8839
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "mercadoenvios",
+          "name": "Mercado Envíos",
+          "results": 38701
+        },
+        {
+          "id": "fulfillment",
+          "name": "Full",
+          "results": 104
+        }
+      ]
+    },
+    {
+      "id": "power_seller",
+      "name": "Filtro por calidad de vendedores",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Mejores vendedores",
+          "results": 16756
+        }
+      ]
+    },
+    {
+      "id": "since",
+      "name": "Filtro por fecha de comienzo",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Publicados hoy",
+          "results": 89
+        }
+      ]
+    },
+    {
+      "id": "until",
+      "name": "Filtro por fecha de finalización",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Finalizan hoy",
+          "results": 10
+        }
+      ]
+    },
+    {
+      "id": "has_video",
+      "name": "Filtro por publicaciones con video",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Publicaciones con video",
+          "results": 1887
+        }
+      ]
+    },
+    {
+      "id": "has_pictures",
+      "name": "Filtro por publicaciones con imágenes",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con fotos",
+          "results": 40123
+        }
+      ]
+    },
+    {
+      "id": "all_payment_methods_discount",
+      "name": "Descuentos para todos los medios de pago",
+      "type": "number",
+      "values": [
+        {
+          "id": "5-100",
+          "name": "Desde 5% OFF",
+          "results": 38
+        },
+        {
+          "id": "10-100",
+          "name": "Desde 10% OFF",
+          "results": 27
+        },
+        {
+          "id": "15-100",
+          "name": "Desde 15% OFF",
+          "results": 6
+        },
+        {
+          "id": "20-100",
+          "name": "Desde 20% OFF",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "price_campaign_id",
+      "name": "Campaña",
+      "type": "number",
+      "values": [
+        {
+          "id": "P-MCO8807004",
+          "name": "P-MCO8807004",
+          "results": 4
+        },
+        {
+          "id": "MCO7626",
+          "name": "MCO7626",
+          "results": 3
+        },
+        {
+          "id": "P-MCO8733029",
+          "name": "P-MCO8733029",
+          "results": 2
+        },
+        {
+          "id": "MCO2298",
+          "name": "MCO2298",
+          "results": 2
+        }
+      ]
+    },
+    {
+      "id": "shipping_cost",
+      "name": "Costo de envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "free",
+          "name": "Gratis",
+          "results": 31309
+        }
+      ]
+    },
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "2230284",
+          "name": "Nuevo",
+          "results": 33027
+        },
+        {
+          "id": "2230581",
+          "name": "Usado",
+          "results": 6928
+        },
+        {
+          "id": "2230582",
+          "name": "Reacondicionado",
+          "results": 161
+        }
+      ]
+    },
+    {
+      "id": "SHIPPING_ORIGIN",
+      "name": "Tipo de compra",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "10215068",
+          "name": "Local",
+          "results": 38420
+        },
+        {
+          "id": "10215069",
+          "name": "Internacional",
+          "results": 1709
+        }
+      ]
+    }
+  ]
+}
