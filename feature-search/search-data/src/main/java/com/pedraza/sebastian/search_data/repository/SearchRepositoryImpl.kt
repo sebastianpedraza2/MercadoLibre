@@ -7,6 +7,7 @@ import com.pedraza.sebastian.search_domain.models.category.Category
 import com.pedraza.sebastian.search_domain.models.item.Item
 import com.pedraza.sebastian.search_data.mappers.toDomain
 import com.pedraza.sebastian.search_domain.models.search.SearchResult
+import com.pedraza.sebastian.search_domain.repository.SearchRepository
 
 
 class SearchRepositoryImpl(private val dataSource: SearchRemoteDataSource) : SearchRepository {
