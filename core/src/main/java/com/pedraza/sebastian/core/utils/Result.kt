@@ -1,16 +1,21 @@
 package com.pedraza.sebastian.core.utils
 
+import android.util.Log
 import androidx.annotation.StringRes
+import com.pedraza.sebastian.core.BuildConfig
 import com.pedraza.sebastian.core.R
 import retrofit2.Response
 
 sealed class Result<T>(
     val data: T? = null,
-    val message: UiText? = null
+    open val message: UiText? = null
 ) {
-    class Success<T>(data: T) : Result<T>(data)
-    class Loading<T>(data: T? = null) : Result<T>(data)
-    class Error<T>(message: UiText, data: T? = null) : Result<T>(data, message)
+    class Success<T>(val value: T) : Result<T>(value)
+    class Error<T>(override val message: UiText, data: T? = null) : Result<T>(data, message)
+
+    companion object {
+      const val TAG = "Result"
+    }
 }
 
 /**
@@ -57,10 +62,12 @@ suspend fun <T, E> resolveResponse(
         val mercadoLibreResponse = dataRequest()
         mercadoLibreResponse.toResult(action = action)
     } catch (error: Exception) {
+        if (BuildConfig.DEBUG) {
+            Log.e(Result.TAG, "resolveResponse: ${error.stackTrace} ${error.localizedMessage} ${error.cause}")
+        }
         Result.Error(UiText.DynamicString(error.message.toString()))
     }
 }
-
 
 /**
  * Created by Sebastian Pedraza

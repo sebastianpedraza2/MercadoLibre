@@ -9,11 +9,13 @@ data class QueryResultDto(
     @SerializedName("id")
     val itemId: String,
     @SerializedName("price")
-    val price: Int,
+    val price: Double,
     @SerializedName("sold_quantity")
     val soldQuantity: Int?,
     @SerializedName("thumbnail")
     val thumbnail: String?,
     @SerializedName("title")
     val title: String,
+    @SerializedName("installments")
+    val installments: Installments?
 )

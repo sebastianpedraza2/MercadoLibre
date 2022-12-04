@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">MercadoLibre</string>
-    <string name="meli_default_error">Something went wrong, check your network!</string>
+    <string name="meli_default_error">Algo ha salido mal, revisa tu conexion a internet!</string>
+
+    <!-- Search -->
+    <string name="search_section">Buscar</string>
+    <string name="search_no_matches">Ningun resultado por “%1s”</string>
+    <string name="search_no_matches_retry">Intenta ampliando tu búsqueda</string>
+    <string name="search_count">%1d resultados</string>
+    <string name="cancel_search">Cancelar</string>
+
+
+    <!--    Search Results-->
+    <string name="installments">en %1sx $%2s</string>
+
+    <!--    Categories-->
+    <string name="categories_section">Categorias</string>
+
 </resources>

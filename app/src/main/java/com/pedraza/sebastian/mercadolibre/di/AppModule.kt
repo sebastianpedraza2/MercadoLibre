@@ -1,5 +1,7 @@
 package com.pedraza.sebastian.mercadolibre.di
 
+import com.pedraza.sebastian.android_helpers.snackbar.SnackbarManager
+import com.pedraza.sebastian.core.di.Dispatcher
 import com.pedraza.sebastian.core.utils.Constants
 import dagger.Module
 import dagger.Provides
@@ -13,7 +15,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
-import com.pedraza.sebastian.mercadolibre.di.MercadoLibreDispatchers.IO
+import com.pedraza.sebastian.core.di.MercadoLibreDispatchers.IO
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -52,4 +54,8 @@ object AppModule {
             .addConverterFactory(gsonConverterFactory)
             .build()
     }
+
+    @Singleton
+    @Provides
+    fun provideSnackbarManager(): SnackbarManager = SnackbarManager()
 }
