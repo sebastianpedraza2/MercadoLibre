@@ -1,12 +1,10 @@
 package com.pedraza.sebastian.mercadolibre.ui.theme
 
-import androidx.compose.material.Colors
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 
 val MeliYellow0 = Color(0xFFFEF059)
-val MeliYellow1 = Color(0xFFFFE902)
+val MeliYellow1 = Color(0xFFF8EA4D)
 val MeliYellow2 = Color(0xFF948806)
 
 val MeliBlack0 = Color(0xFF333333)

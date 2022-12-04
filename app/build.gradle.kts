@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling)
     implementation(libs.androidx.compose.ui.util)
     implementation(libs.androidx.compose.ui.testManifest)
+    implementation(libs.accompanist.systemuicontroller)
     implementation(libs.retrofit.core)
     implementation(libs.okhttp.logging)
     implementation(libs.gson)
