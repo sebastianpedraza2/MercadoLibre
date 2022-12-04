@@ -7,10 +7,10 @@ import com.pedraza.sebastian.core.R
 import retrofit2.Response
 
 sealed class Result<T>(
-    val data: T? = null,
+    open val data: T? = null,
     open val message: UiText? = null
 ) {
-    class Success<T>(val value: T) : Result<T>(value)
+    class Success<T>(override val data: T) : Result<T>(data)
     class Error<T>(override val message: UiText, data: T? = null) : Result<T>(data, message)
 
     companion object {

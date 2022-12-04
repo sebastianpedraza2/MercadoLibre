@@ -2,6 +2,7 @@ package com.pedraza.sebastian.search_data.entities.dto.item
 
 
 import com.google.gson.annotations.SerializedName
+import com.pedraza.sebastian.search_data.entities.dto.search.Installments
 
 data class ItemDto(
     @SerializedName("id")
@@ -19,7 +20,7 @@ data class ItemDto(
     @SerializedName("pictures")
     val pictures: List<ItemPictureDto>?,
     @SerializedName("price")
-    val price: Int,
+    val price: Double,
     @SerializedName("sold_quantity")
     val soldQuantity: Int?,
     @SerializedName("secure_thumbnail")

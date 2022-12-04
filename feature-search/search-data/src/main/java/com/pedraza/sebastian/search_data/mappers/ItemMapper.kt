@@ -17,9 +17,9 @@ fun ItemDto.toDomain(itemDescriptionDto: ItemDescriptionDto): Item = Item(
     pictures = getItemPictures(pictures).orEmpty(),
     price = price,
     soldQuantity = soldQuantity,
-    thumbnail = secureThumbnail,
-    warranty = warranty,
-    categoryId = categoryId,
+    thumbnail = secureThumbnail.orEmpty(),
+    warranty = warranty.orEmpty(),
+    categoryId = categoryId.orEmpty(),
 )
 
 

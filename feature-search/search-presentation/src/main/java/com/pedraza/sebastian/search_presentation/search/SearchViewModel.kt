@@ -10,6 +10,7 @@ import com.pedraza.sebastian.core.utils.Constants.DEFAULT_SITE_ID
 import com.pedraza.sebastian.core.utils.Result
 import com.pedraza.sebastian.core.utils.ScreenUiState
 import com.pedraza.sebastian.core.utils.UiText
+import com.pedraza.sebastian.core.R
 import com.pedraza.sebastian.search_domain.models.search.SearchResult
 import com.pedraza.sebastian.search_domain.usecases.categories.GetCategoriesUseCase
 import com.pedraza.sebastian.search_domain.usecases.items.SearchItemsUseCase
@@ -50,6 +51,7 @@ class SearchViewModel @Inject constructor(
         when {
             !uiState.isFocused && query.isEmpty() -> SearchDisplay.Categories
             uiState.isFocused && query.isEmpty() -> SearchDisplay.Suggestions
+            query.isNotEmpty() && uiState.primaryResults == 0 -> SearchDisplay.NoResults
             query.isNotEmpty() -> SearchDisplay.Results
             else -> SearchDisplay.Categories
         }
@@ -85,10 +87,10 @@ class SearchViewModel @Inject constructor(
         when (event) {
             is SearchEvent.OnSearchItems -> setSearchQuery(event.query)
             is SearchEvent.OnLoadNewItems -> loadNewItems()
-            is SearchEvent.OnItemClicked -> navigateToItemDetail(event.itemId)
             is SearchEvent.OnFocusChanged -> updateFocus(event.focus)
             is SearchEvent.OnClearQuery -> clearQuery()
             is SearchEvent.OnGetCategories -> getCategories()
+            is SearchEvent.OnCategoryClicked -> searchByCategory()
         }
     }
 
@@ -100,7 +102,7 @@ class SearchViewModel @Inject constructor(
             when (val response = getCategoriesUseCase.invoke(DEFAULT_SITE_ID)) {
                 is Result.Success -> _uiState.update { currentState ->
                     currentState.copy(
-                        categories = response.value,
+                        categories = response.data,
                         screenUiState = ScreenUiState.Fetched
                     )
                 }
@@ -138,10 +140,6 @@ class SearchViewModel @Inject constructor(
         }
     }
 
-    private fun navigateToItemDetail(itemId: String) {
-        //TODO
-    }
-
     private fun updateItemsState(response: SearchResult, newOffset: Int) {
         _uiState.update { currentState ->
             currentState.copy(
@@ -168,7 +166,6 @@ class SearchViewModel @Inject constructor(
             _query.value
         )
 
-
     private fun hasReachedEnd(response: SearchResult): Boolean {
         return (response.pagingOffset <= response.primaryResults) || (response.pagingOffset + response.itemsPerPage < 1000)
     }
@@ -188,11 +185,17 @@ class SearchViewModel @Inject constructor(
         _uiState.update { currentState -> currentState.copy(items = emptyList(), offset = 0) }
     }
 
+    private fun searchByCategory() {
+        // Todo invoke searchByCategoryUseCase
+        showSnackBar(UiText.ResourcesString(R.string.feature_under_work))
+    }
+
     private fun showSnackBar(message: UiText) {
         snackbarManager.showMessage(message)
     }
 
     companion object {
         const val DEBOUNCE_TIMEOUT = 900L
+        const val TAG = "SearchViewModel"
     }
 }

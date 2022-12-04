@@ -6,7 +6,9 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.Color
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.pedraza.sebastian.core.dimensions.Dimensions
 import com.pedraza.sebastian.core.dimensions.LocalSpacing
 
@@ -43,6 +45,16 @@ fun MercadoLibreTheme(
         DarkColorPalette
     } else {
         LightColorPalette
+    }
+
+    val sysUiController = rememberSystemUiController()
+    SideEffect {
+        sysUiController.setSystemBarsColor(
+            color = colors.primary
+        )
+        sysUiController.setNavigationBarColor(
+            color = colors.onSecondary
+        )
     }
     CompositionLocalProvider(LocalSpacing provides Dimensions()) {
         MaterialTheme(

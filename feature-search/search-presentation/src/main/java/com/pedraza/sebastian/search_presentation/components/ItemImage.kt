@@ -20,12 +20,13 @@ fun ItemImage(
     imageUrl: String,
     contentDescription: String?,
     modifier: Modifier = Modifier,
-    elevation: Dp = 0.dp
+    elevation: Dp = 0.dp,
+    roundedCornerSize: Dp = 10.dp
 ) {
     Surface(
         color = Color.LightGray,
         elevation = elevation,
-        shape = RoundedCornerShape(10.dp),
+        shape = RoundedCornerShape(roundedCornerSize),
         modifier = modifier
     ) {
         AsyncImage(

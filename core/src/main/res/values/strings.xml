@@ -8,12 +8,21 @@
     <string name="search_no_matches_retry">Intenta ampliando tu búsqueda</string>
     <string name="search_count">%1d resultados</string>
     <string name="cancel_search">Cancelar</string>
-
-
-    <!--    Search Results-->
     <string name="installments">en %1sx $%2s</string>
 
-    <!--    Categories-->
+    <!-- Categories-->
     <string name="categories_section">Categorias</string>
+
+    <!-- Item Detail-->
+    <string name="description">Descripcion</string>
+    <string name="stock">Stock disponible</string>
+    <string name="sold_quantity">Vendidos</string>
+    <string name="item_condition">Condicion</string>
+    <string name="stock_quantity">Cantidad: %1s</string>
+    <string name="see_more">VER MAS</string>
+    <string name="see_less">VER MENOS</string>
+
+<!--    Still working-->
+    <string name="feature_under_work">Lo sentimos, feature no disponible para esta version, estamos trabajando en ello!</string>
 
 </resources>

@@ -26,8 +26,8 @@ class SearchPaginator(
         val result = onRequest(currentOffset)
         isMakingRequest = false
         if (result is Result.Success) {
-            currentOffset = getNextOffset(result.value)
-            onSuccess(result.value, currentOffset)
+            currentOffset = getNextOffset(result.data)
+            onSuccess(result.data, currentOffset)
             onLoadUpdated(false)
         } else if (result is Result.Error) {
             onError(result.message)
