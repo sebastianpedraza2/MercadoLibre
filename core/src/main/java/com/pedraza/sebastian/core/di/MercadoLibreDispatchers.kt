@@ -1,4 +1,4 @@
-package com.pedraza.sebastian.mercadolibre.di
+package com.pedraza.sebastian.core.di
 
 import javax.inject.Qualifier
 

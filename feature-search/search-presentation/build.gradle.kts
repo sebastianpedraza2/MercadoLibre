@@ -11,11 +11,13 @@ dependencies {
 
     //Modules
     implementation(project(":feature-search:search-domain"))
+    implementation(project(":android-helpers"))
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.runtime)
     implementation(libs.androidx.lifecycle.runtimeCompose)
     implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.constraintlayout.compose)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.compose.material)
     implementation(libs.androidx.compose.ui.tooling)

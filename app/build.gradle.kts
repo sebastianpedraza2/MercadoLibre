@@ -37,6 +37,8 @@ dependencies {
 
     //Modules
     implementation(project(":core"))
+    implementation(project(":android-helpers"))
+    implementation(project(":feature-search"))
     implementation(project(":feature-search:search-presentation"))
     implementation(project(":feature-search:search-domain"))
     implementation(project(":feature-search:search-data"))
@@ -48,6 +50,7 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.compose.material)
     implementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.compose.ui.util)
     implementation(libs.androidx.compose.ui.testManifest)
     implementation(libs.retrofit.core)
     implementation(libs.okhttp.logging)

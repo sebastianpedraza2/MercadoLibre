@@ -22,8 +22,10 @@ fun getResultItems(results: List<QueryResultDto>?): List<SearchResultItem>? {
                 title = item.title,
                 price = item.price,
                 thumbnail = item.thumbnail.orEmpty(),
-                availableQuantity = item.availableQuantity,
-                soldQuantity = item.soldQuantity
+                availableQuantity = item.availableQuantity ?: 0,
+                soldQuantity = item.soldQuantity ?: 0,
+                installmentsAmount = item.installments?.amount,
+                installmentsQuantity = item.installments?.quantity,
             )
         }
     }

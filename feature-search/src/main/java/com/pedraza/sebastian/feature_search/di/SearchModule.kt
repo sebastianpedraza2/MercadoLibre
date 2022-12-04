@@ -8,6 +8,7 @@ import com.pedraza.sebastian.search_data.repository.SearchRepositoryImpl
 import com.pedraza.sebastian.search_domain.usecases.categories.GetCategoriesUseCase
 import com.pedraza.sebastian.search_domain.usecases.categories.GetCategoriesUseCaseImpl
 import com.pedraza.sebastian.search_domain.usecases.items.*
+import com.pedraza.sebastian.search_presentation.utils.PaginationFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -47,4 +48,7 @@ object SearchModule {
     @Provides
     fun provideSearchItemsUseCase(searchRepository: SearchRepository): SearchItemsUseCase =
         SearchItemsUseCaseImpl(searchRepository)
+
+    @Provides
+    fun providePaginationFactory(): PaginationFactory = PaginationFactory()
 }
