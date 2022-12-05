@@ -54,21 +54,21 @@ fun NavGraphBuilder.meliNavGraph(
 ```
 
 ## Funcionalidad:
-Pantalla principal que hace las veces de un "feed screen", se muestran todas las categorias disponibles en el site:
+* #### Pantalla principal que hace las veces de un "feed screen", muestra todas las categorias disponibles en el site:
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/46971682/205698978-488d8973-1400-454c-be05-0a415f56feca.png">
 
-Pantalla de "suggestions" que muestra el historial de busqueda:
+* #### Pantalla de "suggestions" que muestra el historial de busqueda:
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/46971682/205699701-185a3498-6d50-494f-af21-b6b59177d614.png">
 
 La data del historial de busqueda persiste por medio de datastore preferences.
 
-Pantalla de busqueda en tiempo real (Se implementa con un debounce de 1000ml):
+* #### Pantalla de busqueda en tiempo real (implementada con un debounce de 1s y paginacion):
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/46971682/205699234-b1e71eac-d0f5-4266-ac92-67640404b53b.png">
 
-Pantalla de detalle de un item:
+* #### Pantalla del detalle de un item:
 
 ![item_detail_gif](https://user-images.githubusercontent.com/46971682/205701095-07680dcb-e122-41ed-926a-5af7e3780998.gif)
 
