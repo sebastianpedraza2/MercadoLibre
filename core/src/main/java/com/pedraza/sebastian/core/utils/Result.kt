@@ -63,8 +63,7 @@ suspend fun <T, E> resolveResponse(
         mercadoLibreResponse.toResult(action = action)
     } catch (error: Exception) {
         // Maybe send some report to crashlytics
-        if (BuildConfig.DEBUG) Log.e(Result.TAG, "Message: $error"
-        )
+//        if (BuildConfig.DEBUG) Log.e(Result.TAG, "Message: $error" )
         Result.Error(UiText.DynamicString(error.message.toString()))
     }
 }
