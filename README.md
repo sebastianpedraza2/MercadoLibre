@@ -5,7 +5,7 @@ Escogí una arquitectura modularizada de manera híbrida, esto quiere decir que 
 
 
 <img width="276" alt="image" src="https://user-images.githubusercontent.com/46971682/205694717-5e3f0b57-d242-4c50-9013-fcd8888b0b69.png">
-Esta arquitectura, que se caracteriza por tener una alta granularidad, me permite lograr faster Gradle building time (especialmente a medida que el proyecto escala), mejor separación de concerns y reusabilidad de los módulos (librerías), además se prohíbe la comunicación entre módulos a menos que exista una dependencia explícita, haciendo que cada módulo sea independiente y forzando un bajo acoplamiento.
+Esta arquitectura, que se caracteriza por tener una alta granularidad, me permite lograr faster Gradle building time (especialmente a medida que el proyecto escala), mejor separación de concerns y reusabilidad de los módulos (librerías), además, se prohíbe la comunicación entre módulos a menos que exista una dependencia explícita, haciendo que cada módulo sea independiente y forzando un bajo acoplamiento.
 
 Para este proyecto el domain layer funciona como dependencia principal tanto de las capas de présentation como de data.
 
@@ -52,6 +52,8 @@ fun NavGraphBuilder.meliNavGraph(
     }
 }
 ```
+## Testing:
+Implementacion de test unitarios con `Junit`, `Mockk`, `MockWebServer`, `Truth`, etc. 
 
 ## Funcionalidad:
 * #### Pantalla principal que hace las veces de un "feed screen", muestra todas las categorias disponibles en el site:
