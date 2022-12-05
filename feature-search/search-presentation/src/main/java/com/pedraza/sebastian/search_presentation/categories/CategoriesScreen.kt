@@ -30,7 +30,7 @@ fun SearchCategories(
         contentAlignment = Alignment.Center
     ) {
         when (screenState) {
-            ScreenUiState.Loading -> LoadingScreen(color = MaterialTheme.colors.secondary)
+            ScreenUiState.Loading -> LoadingScreen()
             ScreenUiState.Fetched -> CategoriesContent(
                 categories = categories,
                 triggerEvent = triggerEvent

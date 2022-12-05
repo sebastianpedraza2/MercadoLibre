@@ -12,8 +12,10 @@ data class SearchState(
     val endReached: Boolean = false,
     val offset: Int = 0,
     val isFocused: Boolean = true,
-    val suggestions: List<SearchSuggestionGroup> = searchSuggestions,
-    val screenUiState: ScreenUiState = ScreenUiState.Init
+    val suggestions: List<String> = emptyList(),
+    val categoriesScreenState: ScreenUiState = ScreenUiState.Init,
+    val suggestionsScreenState: ScreenUiState = ScreenUiState.Init,
+    val resultsScreenState: ScreenUiState = ScreenUiState.Init,
 )
 
 enum class SearchDisplay {

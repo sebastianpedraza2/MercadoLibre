@@ -22,9 +22,8 @@ fun ItemDetailScreen(
 
     when (uiState.value.screenState) {
         ScreenUiState.Init -> viewModel.getItemDetail(itemId)
-        ScreenUiState.Loading -> LoadingScreen(color = MaterialTheme.colors.onSurface)
+        ScreenUiState.Loading -> LoadingScreen()
         ScreenUiState.Fetched -> ItemDetailContent(uiState.value.itemDetail, upPress)
         ScreenUiState.Failure -> Unit
     }
 }
-

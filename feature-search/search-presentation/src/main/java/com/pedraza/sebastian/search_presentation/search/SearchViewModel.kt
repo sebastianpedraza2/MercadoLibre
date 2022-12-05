@@ -3,8 +3,6 @@ package com.pedraza.sebastian.search_presentation.search
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.pedraza.sebastian.android_helpers.snackbar.SnackbarManager
-import com.pedraza.sebastian.core.di.Dispatcher
-import com.pedraza.sebastian.core.di.MercadoLibreDispatchers
 import com.pedraza.sebastian.core.utils.Constants.DEFAULT_PAGE_SIZE
 import com.pedraza.sebastian.core.utils.Constants.DEFAULT_SITE_ID
 import com.pedraza.sebastian.core.utils.Result
@@ -14,20 +12,23 @@ import com.pedraza.sebastian.core.R
 import com.pedraza.sebastian.search_domain.models.search.SearchResult
 import com.pedraza.sebastian.search_domain.usecases.categories.GetCategoriesUseCase
 import com.pedraza.sebastian.search_domain.usecases.items.SearchItemsUseCase
+import com.pedraza.sebastian.search_domain.usecases.suggestions.GetSearchSuggestionsUseCase
+import com.pedraza.sebastian.search_domain.usecases.suggestions.SaveSearchSuggestionUseCase
 import com.pedraza.sebastian.search_presentation.utils.PaginationFactory
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+import kotlin.coroutines.CoroutineContext
 
 @HiltViewModel
 class SearchViewModel @Inject constructor(
-    @Dispatcher(MercadoLibreDispatchers.IO)
-    private val meliDispatcher: CoroutineDispatcher,
+    private val meliContext: CoroutineContext,
     private val searchItemsUseCase: SearchItemsUseCase,
     private val getCategoriesUseCase: GetCategoriesUseCase,
+    private val saveSearchSuggestionUseCase: SaveSearchSuggestionUseCase,
+    private val getSearchSuggestionsUseCase: GetSearchSuggestionsUseCase,
     private val paginationFactory: PaginationFactory,
     private val snackbarManager: SnackbarManager
 ) : ViewModel() {
@@ -49,10 +50,10 @@ class SearchViewModel @Inject constructor(
      */
     val searchDisplay = combine(_uiState, _query) { uiState, query ->
         when {
-            !uiState.isFocused && query.isEmpty() -> SearchDisplay.Categories
-            uiState.isFocused && query.isEmpty() -> SearchDisplay.Suggestions
-            query.isNotEmpty() && uiState.primaryResults == 0 -> SearchDisplay.NoResults
-            query.isNotEmpty() -> SearchDisplay.Results
+            shouldDisplayCategories(uiState, query) -> SearchDisplay.Categories
+            shouldDisplaySuggestions(uiState, query) -> SearchDisplay.Suggestions
+            shouldDisplayNoResults(uiState, query) -> SearchDisplay.NoResults
+            shouldDisplayResults(query) -> SearchDisplay.Results
             else -> SearchDisplay.Categories
         }
     }.stateIn(
@@ -67,11 +68,11 @@ class SearchViewModel @Inject constructor(
     private val meliPaginator by lazy {
         paginationFactory.getSearchPaginator(
             initialOffset = _uiState.value.offset,
-            onLoadUpdated = ::updateLoadingState,
+            onLoadUpdated = ::updatePagingSearchingState,
             onRequest = ::requestNewItems,
             getNextOffset = ::getNextOffset,
             onError = ::showSnackBar,
-            onSuccess = ::updateItemsState
+            onSuccess = ::onSearchSuccessful
         )
     }
 
@@ -91,19 +92,42 @@ class SearchViewModel @Inject constructor(
             is SearchEvent.OnClearQuery -> clearQuery()
             is SearchEvent.OnGetCategories -> getCategories()
             is SearchEvent.OnCategoryClicked -> searchByCategory()
+            is SearchEvent.OnSuggestionClicked -> setSearchQuery(event.suggestion)
+            is SearchEvent.OnGetSuggestions -> getSuggestions()
+        }
+    }
+
+    private fun getSuggestions() {
+        viewModelScope.launch(meliContext) {
+            _uiState.update { currentState ->
+                currentState.copy(
+                    suggestionsScreenState = ScreenUiState.Loading
+                )
+            }
+            when (val response = getSearchSuggestionsUseCase.invoke()) {
+                is Result.Success -> response.data.collect {
+                    _uiState.update { currentState ->
+                        currentState.copy(
+                            suggestions = it,
+                            suggestionsScreenState = ScreenUiState.Fetched
+                        )
+                    }
+                }
+                is Result.Error -> showSnackBar(response.message)
+            }
         }
     }
 
     private fun getCategories() {
-        viewModelScope.launch(meliDispatcher) {
+        viewModelScope.launch(meliContext) {
             _uiState.update { currentState ->
-                currentState.copy(screenUiState = ScreenUiState.Loading)
+                currentState.copy(categoriesScreenState = ScreenUiState.Loading)
             }
             when (val response = getCategoriesUseCase.invoke(DEFAULT_SITE_ID)) {
                 is Result.Success -> _uiState.update { currentState ->
                     currentState.copy(
                         categories = response.data,
-                        screenUiState = ScreenUiState.Fetched
+                        categoriesScreenState = ScreenUiState.Fetched
                     )
                 }
                 is Result.Error -> {
@@ -120,6 +144,7 @@ class SearchViewModel @Inject constructor(
         }
             .onEach {
                 resetResultItems()
+                updateSearchScreenState(ScreenUiState.Loading)
             }
             .debounce(DEBOUNCE_TIMEOUT)
             .onEach {
@@ -128,8 +153,24 @@ class SearchViewModel @Inject constructor(
             .launchIn(viewModelScope)
     }
 
+    private fun shouldDisplayCategories(uiState: SearchState, query: String) =
+        !uiState.isFocused && query.isEmpty()
+
+    private fun shouldDisplaySuggestions(uiState: SearchState, query: String) =
+        uiState.isFocused && query.isEmpty()
+
+    private fun shouldDisplayNoResults(uiState: SearchState, query: String) =
+        uiState.resultsScreenState == ScreenUiState.Fetched && query.isNotEmpty() && uiState.primaryResults == NO_PRIMARY_RESULTS
+
+    private fun shouldDisplayResults(query: String) =
+        query.isNotEmpty()
+
     private fun clearQuery() {
         _query.update { "" }
+    }
+
+    private fun updateSearchScreenState(screenState: ScreenUiState) {
+        _uiState.update { currentState -> currentState.copy(resultsScreenState = screenState) }
     }
 
     private fun updateFocus(focus: Boolean) {
@@ -140,21 +181,35 @@ class SearchViewModel @Inject constructor(
         }
     }
 
-    private fun updateItemsState(response: SearchResult, newOffset: Int) {
+    private fun onSearchSuccessful(response: SearchResult, newOffset: Int) {
         _uiState.update { currentState ->
             currentState.copy(
                 offset = newOffset,
                 items = currentState.items + response.results,
                 endReached = hasReachedEnd(response),
-                primaryResults = response.primaryResults
+                primaryResults = response.primaryResults,
+                resultsScreenState = ScreenUiState.Fetched
             )
+        }
+        saveQueryToSuggestions(query.value)
+    }
+
+    private fun saveQueryToSuggestions(query: String) {
+        viewModelScope.launch(meliContext) {
+            when (val response = saveSearchSuggestionUseCase.invoke(
+                previousList = uiState.value.suggestions,
+                suggestion = query
+            )) {
+                is Result.Error -> showSnackBar(response.message)
+                is Result.Success -> Unit
+            }
         }
     }
 
     private fun getNextOffset(response: SearchResult): Int =
         with(response) { pagingOffset + itemsPerPage }
 
-    private fun updateLoadingState(state: Boolean) {
+    private fun updatePagingSearchingState(state: Boolean) {
         _uiState.update { currentState -> currentState.copy(isSearching = state) }
     }
 
@@ -175,7 +230,7 @@ class SearchViewModel @Inject constructor(
     }
 
     private fun loadNewItems() {
-        viewModelScope.launch(meliDispatcher) {
+        viewModelScope.launch(meliContext) {
             meliPaginator.loadNextItems()
         }
     }
@@ -195,7 +250,8 @@ class SearchViewModel @Inject constructor(
     }
 
     companion object {
-        const val DEBOUNCE_TIMEOUT = 900L
+        const val DEBOUNCE_TIMEOUT = 1000L
         const val TAG = "SearchViewModel"
+        const val NO_PRIMARY_RESULTS = 0
     }
 }

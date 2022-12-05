@@ -14,7 +14,7 @@ sealed class Result<T>(
     class Error<T>(override val message: UiText, data: T? = null) : Result<T>(data, message)
 
     companion object {
-      const val TAG = "Result"
+        const val TAG = "Result"
     }
 }
 
@@ -62,9 +62,9 @@ suspend fun <T, E> resolveResponse(
         val mercadoLibreResponse = dataRequest()
         mercadoLibreResponse.toResult(action = action)
     } catch (error: Exception) {
-        if (BuildConfig.DEBUG) {
-            Log.e(Result.TAG, "resolveResponse: ${error.stackTrace} ${error.localizedMessage} ${error.cause}")
-        }
+        // Maybe send some report to crashlytics
+        if (BuildConfig.DEBUG) Log.e(Result.TAG, "Message: $error"
+        )
         Result.Error(UiText.DynamicString(error.message.toString()))
     }
 }

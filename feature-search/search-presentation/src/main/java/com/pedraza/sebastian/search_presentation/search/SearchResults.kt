@@ -13,25 +13,49 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.pedraza.sebastian.android_helpers.components.LoadingScreen
 import com.pedraza.sebastian.android_helpers.components.MeliDivider
 import com.pedraza.sebastian.core.R
 import com.pedraza.sebastian.core.dimensions.LocalSpacing
+import com.pedraza.sebastian.core.utils.ScreenUiState
 import com.pedraza.sebastian.search_domain.models.search.SearchResultItem
 import com.pedraza.sebastian.search_presentation.components.ResultItem
 
 
 @Composable
-fun SearchResultList(
+fun SearchResults(
     items: List<SearchResultItem>,
     primaryResults: Int,
     isSearching: Boolean,
-    modifier: Modifier = Modifier,
+    screenState: ScreenUiState,
+    triggerEvent: (SearchEvent) -> Unit,
+    onItemClick: (String) -> Unit,
+) {
+    when (screenState) {
+        ScreenUiState.Loading -> LoadingScreen()
+        ScreenUiState.Fetched -> SearchResultsContent(
+            items,
+            primaryResults,
+            isSearching,
+            triggerEvent,
+            onItemClick
+        )
+        else -> Unit
+    }
+}
+
+@Composable
+fun SearchResultsContent(
+    items: List<SearchResultItem>,
+    primaryResults: Int,
+    isSearching: Boolean,
     triggerEvent: (SearchEvent) -> Unit,
     onItemClick: (String) -> Unit,
 ) {
     val spacing = LocalSpacing.current
     val listState = rememberLazyListState()
-    Column(modifier = modifier.fillMaxSize()) {
+
+    Column(modifier = Modifier.fillMaxSize()) {
         Text(
             text = stringResource(R.string.search_count, primaryResults),
             style = MaterialTheme.typography.h6,
