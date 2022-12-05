@@ -71,7 +71,7 @@ class SearchRepositoryImplTest {
         //when
         val result = repository.getCategories("MCO")
         //then
-        assertThat(result).isInstanceOf(Result.Success::class.java)
+        assertThat(result is Result.Success).isTrue()
         assertThat(result.data).isNotNull()
         with(result.data!![0]) {
             assertThat(id).isEqualTo("MCO1747")
@@ -86,9 +86,9 @@ class SearchRepositoryImplTest {
         //when
         val result = repository.getCategories("MCO")
         //then
-        assertThat(result).isInstanceOf(Result.Error::class.java)
+        assertThat(result is Result.Error).isTrue()
+        assertThat(result.message is UiText.ResourcesString).isTrue()
         assertThat(result.data).isNull()
-        assertThat(result.message).isInstanceOf(UiText.ResourcesString::class.java)
     }
 
 
@@ -99,9 +99,9 @@ class SearchRepositoryImplTest {
         //when
         val result = repository.getCategories("MCO")
         //then
-        assertThat(result).isInstanceOf(Result.Error::class.java)
+        assertThat(result is Result.Error).isTrue()
+        assertThat(result.message is UiText.DynamicString).isTrue()
         assertThat(result.data).isNull()
-        assertThat(result.message).isInstanceOf(UiText.DynamicString::class.java)
     }
 
     @Test
@@ -112,7 +112,7 @@ class SearchRepositoryImplTest {
         //when
         val result = repository.getItemDetail("MCO1033116459")
         //then
-        assertThat(result).isInstanceOf(Result.Success::class.java)
+        assertThat(result is Result.Success).isTrue()
         assertThat(result.data).isNotNull()
         with(result.data!!) {
             assertThat(id).isEqualTo("MCO1033116459")
@@ -128,8 +128,8 @@ class SearchRepositoryImplTest {
         //when
         val result = repository.getItemDetail("MCO1033116459")
         //then
-        assertThat(result).isInstanceOf(Result.Error::class.java)
-        assertThat(result.message).isInstanceOf(UiText.ResourcesString::class.java)
+        assertThat(result is Result.Error).isTrue()
+        assertThat(result.message is UiText.ResourcesString).isTrue()
     }
 
     @Test
@@ -140,9 +140,9 @@ class SearchRepositoryImplTest {
         //when
         val result = repository.getItemDetail("MCO1033116459")
         //then
-        assertThat(result).isInstanceOf(Result.Error::class.java)
+        assertThat(result is Result.Error).isTrue()
+        assertThat(result.message is UiText.DynamicString).isTrue()
         assertThat(result.data).isNull()
-        assertThat(result.message).isInstanceOf(UiText.DynamicString::class.java)
     }
 
     @Test
@@ -158,7 +158,7 @@ class SearchRepositoryImplTest {
             query = "xbox"
         )
         //then
-        assertThat(result).isInstanceOf(Result.Success::class.java)
+        assertThat(result is Result.Success).isTrue()
         assertThat(result.data).isNotNull()
         with(result.data!!.results[0]) {
             assertThat(thumbnail).isEqualTo("http://http2.mlstatic.com/D_995465-MLA45731835097_042021-I.jpg")
@@ -179,9 +179,10 @@ class SearchRepositoryImplTest {
             query = "xbox"
         )
         //then
-        assertThat(result).isInstanceOf(Result.Error::class.java)
+        assertThat(result is Result.Error).isTrue()
+        assertThat(result.message is UiText.ResourcesString).isTrue()
         assertThat(result.data).isNull()
-        assertThat(result.message).isInstanceOf(UiText.ResourcesString::class.java)
+
     }
 
     @Test
@@ -215,9 +216,8 @@ class SearchRepositoryImplTest {
             query = "xbox"
         )
         //then
-        assertThat(result).isInstanceOf(Result.Error::class.java)
+        assertThat(result is Result.Error).isTrue()
+        assertThat(result.message is UiText.DynamicString).isTrue()
         assertThat(result.data).isNull()
-        assertThat(result.message).isInstanceOf(UiText.DynamicString::class.java)
     }
 }
-

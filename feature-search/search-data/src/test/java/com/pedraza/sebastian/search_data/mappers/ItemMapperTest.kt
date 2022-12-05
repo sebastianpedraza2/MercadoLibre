@@ -45,7 +45,11 @@ class ItemMapperTest {
 
         //then
         assertThat(domainItem.pictures).isEqualTo(listOf("https://http2.mlstatic.com/D_955993-MCO43399175828_092020-O.jpg"))
+        assertThat(domainItem.description).isEqualTo("SOMOS MOBILEWAVE \n\nCABLE ORIGINAL APPLE \nMODELOS \nIPHONE 5,6,7,8,X,XS,XR,11\nCOLOR BLANCO \nEMPAQUE BULK \n\n\nENVIO")
         assertThat(domainItem.itemCondition).isEqualTo("Nuevo")
+        assertThat(domainItem.id).isEqualTo("MCO462614986")
+        assertThat(domainItem.availableQuantity).isEqualTo(1)
+        assertThat(domainItem.price).isEqualTo(33950.0)
     }
 
     @Test
@@ -72,6 +76,7 @@ class ItemMapperTest {
 
         //then
         assertThat(domainItem.pictures).isEqualTo(listOf("https://http2.mlstatic.com/D_955993-MCO43399175828_092020-O.jpg"))
+        assertThat(domainItem.description).isEqualTo("SOMOS MOBILEWAVE \n\nCABLE ORIGINAL APPLE \nMODELOS \nIPHONE 5,6,7,8,X,XS,XR,11\nCOLOR BLANCO \nEMPAQUE BULK \n\n\nENVIO")
         assertThat(domainItem.itemCondition).isNotNull()
     }
 
@@ -93,6 +98,7 @@ class ItemMapperTest {
         assertThat(domainItem.title).isNotNull()
         assertThat(domainItem.pictures).isNotNull()
         assertThat(domainItem.itemCondition).isNotNull()
+        assertThat(domainItem.description).isEqualTo("SOMOS MOBILEWAVE \n\nCABLE ORIGINAL APPLE \nMODELOS \nIPHONE 5,6,7,8,X,XS,XR,11\nCOLOR BLANCO \nEMPAQUE BULK \n\n\nENVIO")
     }
 
 

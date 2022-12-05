@@ -1,6 +1,7 @@
 package com.pedraza.sebastian.search_data.mappers
 
 import com.google.common.truth.Truth.assertThat
+import com.pedraza.sebastian.search_data.entities.dto.search.Installments
 import com.pedraza.sebastian.search_data.entities.dto.search.QueryResultDto
 import com.pedraza.sebastian.search_data.utils.generateMockSearchDto
 import org.junit.Test
@@ -15,10 +16,11 @@ class SearchMapperTest {
                 QueryResultDto(
                     availableQuantity = 1,
                     itemId = "MCO462381052",
-                    price = 33454,
+                    price = 33454.0,
                     soldQuantity = 1,
                     thumbnail = "http://http2.mlstatic.com/D_818576-MLA45731625708_042021-I.jpg",
-                    title = "Cargador iPhone 7,8/8+,x,xs,max,xr Original"
+                    title = "Cargador iPhone 7,8/8+,x,xs,max,xr Original",
+                    installments = Installments(quantity = 1, amount = 20300.2)
                 )
             )
         )
@@ -31,6 +33,8 @@ class SearchMapperTest {
         with(domainSearch.results[0]) {
             assertThat(price).isEqualTo(33454)
             assertThat(itemId).isEqualTo("MCO462381052")
+            assertThat(installmentsAmount).isEqualTo(20300.2)
+            assertThat(installmentsQuantity).isEqualTo(1)
         }
     }
 
@@ -60,7 +64,7 @@ class SearchMapperTest {
         val domainSearch = searchDto.toDomain()
 
         //then
-        assertThat(domainSearch.results).isNotNull()
+        assertThat(domainSearch.results).isEmpty()
     }
 
     @Test
@@ -71,10 +75,11 @@ class SearchMapperTest {
                 QueryResultDto(
                     availableQuantity = null,
                     itemId = "MCO462381052",
-                    price = 33454,
+                    price = 33454.0,
                     soldQuantity = null,
                     thumbnail = null,
-                    title = "Cargador iPhone 7,8/8+,x,xs,max,xr Original"
+                    title = "Cargador iPhone 7,8/8+,x,xs,max,xr Original",
+                    installments = null
                 )
             )
         )
@@ -83,8 +88,8 @@ class SearchMapperTest {
 
         //then
         with(domainSearch.results[0]) {
-            assertThat(availableQuantity).isNull()
-            assertThat(soldQuantity).isNull()
+            assertThat(availableQuantity).isNotNull()
+            assertThat(soldQuantity).isNotNull()
             assertThat(thumbnail).isNotNull()
         }
     }

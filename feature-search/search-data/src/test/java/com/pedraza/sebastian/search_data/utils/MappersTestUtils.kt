@@ -20,7 +20,7 @@ fun generateMockItemDto(
     initialQuantity = null,
     permalink = null,
     pictures = pictures,
-    price = 33950,
+    price = 33950.0,
     soldQuantity = null,
     secureThumbnail = null,
     title = null,
