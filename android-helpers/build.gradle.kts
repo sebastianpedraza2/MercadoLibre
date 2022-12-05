@@ -21,6 +21,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling)
     implementation(libs.androidx.compose.ui.testManifest)
     implementation(libs.androidx.lifecycle.viewModelCompose)
+    implementation(libs.androidx.dataStore.core)
+    implementation(libs.androidx.dataStore.preferences)
 
     implementation(libs.coil.kt)
     implementation(libs.coil.kt.svg)

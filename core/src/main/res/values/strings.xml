@@ -22,7 +22,9 @@
     <string name="see_more">VER MAS</string>
     <string name="see_less">VER MENOS</string>
 
-<!--    Still working-->
-    <string name="feature_under_work">Lo sentimos, feature no disponible para esta version, estamos trabajando en ello!</string>
+    <!-- Suggestions-->
+    <string name="suggestions_header">Busquedas recientes</string>
 
+    <!-- Still working-->
+    <string name="feature_under_work">Lo sentimos, feature no disponible para esta version, estamos trabajando en ello!</string>
 </resources>

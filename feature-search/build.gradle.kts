@@ -12,6 +12,8 @@ dependencies {
     implementation(project(":feature-search:search-presentation"))
     implementation(project(":feature-search:search-domain"))
     implementation(project(":feature-search:search-data"))
+    implementation(project(":android-helpers"))
 
+    implementation(libs.gson)
     implementation(libs.retrofit.core)
 }

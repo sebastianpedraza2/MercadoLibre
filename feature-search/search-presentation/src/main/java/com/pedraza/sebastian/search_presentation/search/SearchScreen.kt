@@ -1,33 +1,17 @@
 package com.pedraza.sebastian.search_presentation.search
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
-import com.pedraza.sebastian.core.R
-import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.Search
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.focus.FocusRequester
-import androidx.compose.ui.focus.focusRequester
-import androidx.compose.ui.focus.onFocusChanged
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalFocusManager
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.pedraza.sebastian.android_helpers.components.MeliDivider
-import com.pedraza.sebastian.core.dimensions.LocalSpacing
 import com.pedraza.sebastian.search_presentation.categories.SearchCategories
 import com.pedraza.sebastian.search_presentation.components.SearchBar
 import com.pedraza.sebastian.search_presentation.components.SearchNoResults
+import com.pedraza.sebastian.search_presentation.suggestions.SearchSuggestions
 
 @OptIn(ExperimentalLifecycleComposeApi::class)
 @Composable
@@ -54,18 +38,21 @@ fun SearchScreen(
                 SearchDisplay.Categories -> {
                     SearchCategories(
                         categories = uiState.value.categories,
-                        screenState = uiState.value.screenUiState,
+                        screenState = uiState.value.categoriesScreenState,
                         triggerEvent = viewModel::onEvent
                     )
                 }
-                SearchDisplay.Suggestions -> SearchSuggestions(
+                SearchDisplay.Suggestions ->
+                    SearchSuggestions(
                     suggestions = uiState.value.suggestions,
-                    onSuggestionSelect = { }
+                    screenState = uiState.value.suggestionsScreenState,
+                    triggerEvent = viewModel::onEvent
                 )
                 SearchDisplay.Results -> {
-                    SearchResultList(
+                    SearchResults(
                         items = uiState.value.items,
                         isSearching = uiState.value.isSearching,
+                        screenState = uiState.value.resultsScreenState,
                         primaryResults = uiState.value.primaryResults,
                         onItemClick = onItemClick,
                         triggerEvent = viewModel::onEvent
